@@ -17,6 +17,7 @@
         body: form,
       });
       const result = await response.json();
+      // The server returns { definition: string }, not { data: { definition: string } }
       wordDefinition = result.definition;
     } catch (error) {
       console.error("Error fetching definition:", error);

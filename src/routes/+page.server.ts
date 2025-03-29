@@ -1,31 +1,24 @@
 import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 import { getWordData } from '$lib/db';
-import { processContent } from '$lib/processor';
 import fs from 'fs/promises';
 import path from 'path';
 
 export const load: PageServerLoad = async () => {
     try {
-        const htmlContent = await fs.readFile(
-            path.join(process.cwd(), 'static', 't.html'),
+        const processedHtml = await fs.readFile(
+            path.join(process.cwd(), 'static', 'processed.html'),
             'utf-8'
         );
 
-        const { html, words } = await processContent(htmlContent);
-
-        // Ensure we're only returning the body content
-        const bodyMatch = html.match(/<body[^>]*>([\s\S]*)<\/body>/i);
-        const processedHtml = bodyMatch ? bodyMatch[1] : html;
-
         return {
             processedHtml,
-            words
+            words: [] // You might want to store and load the words list separately
         };
     } catch (e) {
         const errorMessage = e instanceof Error ? e.message : String(e);
         console.error('Error in load function:', errorMessage);
-        throw error(500, `Error processing content: ${errorMessage}`);
+        throw error(500, `Error loading processed content: ${errorMessage}`);
     }
 };
 
@@ -40,6 +33,7 @@ export const actions = {
             }
 
             const wordData = await getWordData(word);
+
             return {
                 definition: wordData?.wiktionary || 'Definition not found'
             };

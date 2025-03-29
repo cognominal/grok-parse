@@ -9,9 +9,24 @@ interface WordData {
 
 const db = new sqlite3.Database('words.db');
 
-// Promisify database operations
-const runAsync = promisify(db.run.bind(db));
-const getAsync = promisify(db.get.bind(db));
+// Correctly promisify database operations
+const runAsync = (sql: string, params: any[] = []): Promise<void> => {
+    return new Promise((resolve, reject) => {
+        db.run(sql, params, (err) => {
+            if (err) reject(err);
+            else resolve();
+        });
+    });
+};
+
+const getAsync = (sql: string, params: any[] = []): Promise<any> => {
+    return new Promise((resolve, reject) => {
+        db.get(sql, params, (err, row) => {
+            if (err) reject(err);
+            else resolve(row);
+        });
+    });
+};
 
 // Create table if it doesn't exist
 db.run(`

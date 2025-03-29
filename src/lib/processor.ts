@@ -35,24 +35,41 @@ export async function fetchWiktionaryContent(word: string): Promise<string | nul
     }
 }
 
-export async function processContent(html: string) {
+function delay(ms: number): Promise<void> {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+export async function processContent(html: string, fetchDefinitions: boolean = false) {
     const dom = new JSDOM(html);
     const doc = dom.window.document;
     const uniqueWords = new Set<string>();
+    const wordIndices: Map<string, number[]> = new Map();
 
     // Process text nodes and wrap Russian words with spans
     function processNode(node: Node) {
         if (node.nodeType === 3) { // Text node
             const text = node.textContent || '';
             const russianPattern = /[а-яёА-ЯЁ]+/g;
-            const words = text.match(russianPattern) || [];
+            let match;
+            
+            while ((match = russianPattern.exec(text)) !== null) {
+                const word = match[0].toLowerCase();
+                uniqueWords.add(word);
+                
+                // Store the index for this occurrence
+                if (!wordIndices.has(word)) {
+                    wordIndices.set(word, []);
+                }
+                wordIndices.get(word)?.push(match.index);
+            }
 
+            // Create spans for visual highlighting
+            const words = text.match(russianPattern) || [];
             if (words.length > 0) {
                 const fragment = doc.createDocumentFragment();
                 let lastIndex = 0;
 
                 words.forEach(word => {
-                    uniqueWords.add(word.toLowerCase());
                     const index = text.indexOf(word, lastIndex);
 
                     if (index > lastIndex) {
@@ -85,8 +102,24 @@ export async function processContent(html: string) {
 
     processNode(doc.body);
 
+    // Only fetch and store Wiktionary content if fetchDefinitions is true
+    if (fetchDefinitions) {
+        // Store all found words in the database with their Wiktionary content
+        for (const word of uniqueWords) {
+            const indices = wordIndices.get(word) || [];
+            const wiktionaryContent = await fetchWiktionaryContent(word);
+            await storeWordData(word, indices, wiktionaryContent);
+            
+            // Optional: Add some logging to track progress
+            console.log(`Processed word: ${word}`);
+            
+            // Add a small delay to avoid overwhelming the Wiktionary API
+            await delay(1000);
+        }
+    }
+
     return {
-        html: doc.body.innerHTML, // Only return the body content
+        html: doc.body.innerHTML,
         words: Array.from(uniqueWords)
     };
 }
