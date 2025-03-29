@@ -18,6 +18,9 @@ export async function fetchWiktionaryContent(word: string): Promise<string | nul
         const dom = new JSDOM(html);
         const doc = dom.window.document;
 
+        // Remove all edit section elements
+        doc.querySelectorAll('.mw-editsection').forEach(el => el.remove());
+
         const russianSection = doc.querySelector("#Russian");
         if (!russianSection) return null;
 

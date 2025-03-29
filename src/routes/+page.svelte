@@ -1,4 +1,5 @@
 <script lang="ts">
+  import TabedPane from "$lib/TabedPane.svelte";
   import type { PageData } from "./$types";
 
   export let data: PageData;
@@ -18,7 +19,12 @@
       });
       const result = await response.json();
       // The server returns { definition: string }, not { data: { definition: string } }
-      wordDefinition = result.definition;
+      wordDefinition = result.data;
+      wordDefinition = wordDefinition!.replace(/\\u003C/g, "<");
+      wordDefinition = wordDefinition!.replace(/\\n/g, "");
+
+      console.log(wordDefinition);
+      // console.log(typeof wordDefinition, wordDefinition);
     } catch (error) {
       console.error("Error fetching definition:", error);
       wordDefinition = "Error loading definition";
@@ -58,6 +64,7 @@
       <button class="close-button" on:click={closeDefinition}>Close</button>
     </div>
   {/if}
+  <TabedPane />
 </main>
 
 <style>
