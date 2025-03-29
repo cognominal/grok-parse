@@ -1,6 +1,6 @@
 this is an app currently under development generated using the vscode extension augment.
 So far it displays html content generated from grok. Some logic is there to get the wiktionary entry
-associated to a russian word but something is missing.x
+associated to a russian word but something is missing.
 
 # Grok Parse
 
@@ -24,6 +24,8 @@ A web application that helps users understand Russian text by making words inter
 
 ## Development
 
+Use `npm` or `pnpm`. 
+
 1. Install dependencies:
 ```bash
 npm install
@@ -33,12 +35,18 @@ pnpm install
 yarn install
 ```
 
-2. Start the development server:
+2. Initialize the database by fetching the wiktionary data:
+```bash
+npm run process-content
+```
+
+
+3. Start the development server:
 ```bash
 npm run dev
 ```
 
-3. Open your browser to `http://localhost:5173`
+4. Open your browser to `http://localhost:5173`
 
 ## Building
 
