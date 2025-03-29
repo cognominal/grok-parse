@@ -1,0 +1,2343 @@
+<div class="flex w-full h-full">
+  <div class="flex w-full h-full @container/mainview">
+    <main class="h-dvh w-full relative selection:bg-highlight">
+      <div class="w-full relative @container/nav z-40">
+        <div
+          class="h-16 top-0 @[80rem]/nav:h-0 @[80rem]/nav:top-8 absolute z-10 flex flex-row items-center justify-center w-full bg-gradient-to-b from-background via-background via-80% to-transparent @[80rem]/nav:from-transparent @[80rem]/nav:via-transparent"
+        >
+          <div class="absolute flex flex-row items-center start-1">
+            <a
+              aria-label="Home page"
+              class="ms-2 me-[0.5] rounded-lg focus:outline-none focus-visible:ring-1 focus-visible:ring-ring w-8 sm:w-auto"
+              href="/"
+              ><svg
+                width="88"
+                height="33"
+                viewBox="0 0 88 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="opacity-80 hover:opacity-100 fill-black dark:fill-white [&amp;>path]:hidden sm:[&amp;>path]:block [&amp;>#mark]:block [&amp;>#furigana]:opacity-60 [&amp;>#subtitle]:opacity-60"
+              >
+                <path
+                  d="M76.4462 24.7077V8.41584H79.0216V19.1679L84.4685 12.9109H87.5908L82.6908 18.2731L87.6364 24.7077H84.5596L80.5539 19.1788L79.0216 19.1679V24.7077H76.4462Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M68.6362 24.9815C64.8074 24.9815 62.7335 22.2662 62.7335 18.7979C62.7335 15.3068 64.8074 12.6143 68.6362 12.6143C72.4878 12.6143 74.5389 15.3068 74.5389 18.7979C74.5389 22.2662 72.4878 24.9815 68.6362 24.9815ZM65.4228 18.7979C65.4228 21.4904 66.8813 22.8366 68.6362 22.8366C70.4139 22.8366 71.8497 21.4904 71.8497 18.7979C71.8497 16.1054 70.4139 14.7363 68.6362 14.7363C66.8813 14.7363 65.4228 16.1054 65.4228 18.7979Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M55.5659 24.7077V14.782L57.731 12.9109H62.3347V15.1014H58.1413V24.7077H55.5659Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M45.7187 25.009C40.8101 25.009 37.8834 21.4448 37.8834 16.5846C37.8834 11.6788 40.9146 8.02795 45.8145 8.02795C49.6433 8.02795 52.4466 9.99027 53.1075 13.6411H50.1675C49.7345 11.5647 48.0024 10.401 45.8145 10.401C42.282 10.401 40.7322 13.4586 40.7322 16.5846C40.7322 19.7106 42.282 22.7454 45.8145 22.7454C49.1875 22.7454 50.6689 20.3039 50.7828 18.2731H45.7006V15.9105H53.381L53.3684 17.1457C53.3684 21.7359 51.4978 25.009 45.7187 25.009Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M13.2371 21.0407L24.3186 12.8506C24.8619 12.4491 25.6384 12.6057 25.8973 13.2294C27.2597 16.5185 26.651 20.4712 23.9403 23.1851C21.2297 25.8989 17.4581 26.4941 14.0108 25.1386L10.2449 26.8843C15.6463 30.5806 22.2053 29.6665 26.304 25.5601C29.5551 22.3051 30.562 17.8683 29.6205 13.8673L29.629 13.8758C28.2637 7.99809 29.9647 5.64871 33.449 0.844576C33.5314 0.730667 33.6139 0.616757 33.6964 0.5L29.1113 5.09055V5.07631L13.2343 21.0436"
+                  fill="currentColor"
+                  id="mark"
+                ></path>
+                <path
+                  d="M10.9503 23.0313C7.07343 19.3235 7.74185 13.5853 11.0498 10.2763C13.4959 7.82722 17.5036 6.82767 21.0021 8.2971L24.7595 6.55998C24.0826 6.07017 23.215 5.54334 22.2195 5.17313C17.7198 3.31926 12.3326 4.24192 8.67479 7.90126C5.15635 11.4239 4.0499 16.8403 5.94992 21.4622C7.36924 24.9165 5.04257 27.3598 2.69884 29.826C1.86829 30.7002 1.0349 31.5745 0.36364 32.5L10.9474 23.0341"
+                  fill="currentColor"
+                  id="mark"
+                ></path></svg
+            ></a>
+          </div>
+          <div
+            class="grow justify-center hidden max-w-[50%] @[640px]/nav:flex"
+          ></div>
+          <div
+            class="absolute flex flex-row items-center gap-0.5 ml-auto end-3"
+          >
+            <a
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-primary hover:bg-button-ghost-hover h-10 w-10 rounded-full"
+              type="button"
+              data-state="closed"
+              href="/chat"
+              ><svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="stroke-[2]"
+                stroke-width="2"
+              >
+                <path
+                  d="M10 4V4C8.13623 4 7.20435 4 6.46927 4.30448C5.48915 4.71046 4.71046 5.48915 4.30448 6.46927C4 7.20435 4 8.13623 4 10V13.6C4 15.8402 4 16.9603 4.43597 17.816C4.81947 18.5686 5.43139 19.1805 6.18404 19.564C7.03968 20 8.15979 20 10.4 20H14C15.8638 20 16.7956 20 17.5307 19.6955C18.5108 19.2895 19.2895 18.5108 19.6955 17.5307C20 16.7956 20 15.8638 20 14V14"
+                  stroke="currentColor"
+                  stroke-linecap="square"
+                ></path>
+                <path
+                  d="M12.4393 14.5607L19.5 7.5C20.3284 6.67157 20.3284 5.32843 19.5 4.5C18.6716 3.67157 17.3284 3.67157 16.5 4.5L9.43934 11.5607C9.15804 11.842 9 12.2235 9 12.6213V15H11.3787C11.7765 15 12.158 14.842 12.4393 14.5607Z"
+                  stroke="currentColor"
+                  stroke-linecap="square"
+                ></path></svg></a
+            ><button
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-primary hover:bg-button-ghost-hover h-10 w-10 rounded-full"
+              type="button"
+              aria-label="History"
+              data-state="closed"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="stroke-[2]"
+              >
+                <path
+                  d="M3 5L19 5"
+                  stroke="currentColor"
+                  stroke-linecap="square"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M3 12H7"
+                  stroke="currentColor"
+                  stroke-linecap="square"
+                  stroke-linejoin="round"
+                ></path>
+                <circle cx="16" cy="15" r="4" stroke="currentColor"></circle>
+                <path
+                  d="M19 18L21 20"
+                  stroke="currentColor"
+                  stroke-linecap="square"
+                ></path>
+                <path
+                  d="M3 19H7"
+                  stroke="currentColor"
+                  stroke-linecap="square"
+                  stroke-linejoin="round"
+                ></path>
+              </svg></button
+            ><button
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-primary hover:bg-button-ghost-hover h-10 w-10 p-1 rounded-full"
+              type="button"
+              id="radix-:rt:"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              data-state="closed"
+            >
+              <span
+                class="relative flex shrink-0 overflow-hidden rounded-full border border-border hover:opacity-75 duration-150 w-8 h-8"
+                ><img
+                  class="aspect-square h-full w-full"
+                  alt="pfp"
+                  src="https://assets.grok.com/users/91768018-488b-404f-bd4e-4ba3df3f1c89/w7ivNETIXae3LFcJ-profile-picture.webp"
+              /></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col h-full relative items-center">
+        <div
+          class="w-full h-full overflow-y-auto overflow-x-hidden scrollbar-gutter-stable flex flex-col items-center px-5"
+        >
+          <div
+            class="relative w-full flex flex-col items-center pt-20 pb-4 animate-in"
+          >
+            <div
+              class="relative group flex flex-col justify-center w-full max-w-3xl md:px-4 pb-2 gap-2 items-end"
+            >
+              <div
+                dir="auto"
+                class="message-bubble rounded-3xl prose dark:prose-invert break-words text-primary min-h-7 prose-p:opacity-95 prose-strong:opacity-100 bg-foreground border border-input-border max-w-[100%] sm:max-w-[90%] px-4 py-2.5 rounded-br-lg"
+              >
+                <span class="whitespace-pre-wrap"
+                  >can you give the address of Soljenitzine in 1978, sentence by
+                  sentence. Each sentence in russian then in english</span
+                >
+              </div>
+              <div
+                class="order-first sticky hidden @xl/mainview:top-0 @[960px]/mainview:block top-12 h-0 opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 -mt-2 -mr-[36px] @lg/mainview:-mr-12"
+              >
+                <div class="min-h-7 py-4 flex flex-col gap-[2px]">
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                    type="button"
+                    data-state="closed"
+                  >
+                    <span style="opacity: 1; transform: none"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="stroke-[2] size-4"
+                      >
+                        <rect
+                          x="3"
+                          y="8"
+                          width="13"
+                          height="13"
+                          rx="4"
+                          stroke="currentColor"
+                        ></rect>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                          fill="currentColor"
+                        ></path></svg
+                    ></span>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-[2px] w-max opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 transition-opacity rounded-lg text-xs bg-background pb-2 px-2 end-4 -mr-2"
+                style="bottom: 125px"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                  type="button"
+                  aria-label="Copy"
+                  data-state="closed"
+                >
+                  <span style="opacity: 1; transform: none"
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="stroke-[2] size-4"
+                    >
+                      <rect
+                        x="3"
+                        y="8"
+                        width="13"
+                        height="13"
+                        rx="4"
+                        stroke="currentColor"
+                      ></rect>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                        fill="currentColor"
+                      ></path></svg
+                  ></span>
+                </button>
+              </div>
+              <div
+                style="
+                  height: 1px;
+                  position: absolute;
+                  bottom: 0px;
+                  z-index: 1000;
+                "
+              ></div>
+            </div>
+            <div
+              class="relative group flex flex-col justify-center w-full max-w-3xl md:px-4 pb-2 gap-2 items-start"
+            >
+              <div
+                dir="auto"
+                class="message-bubble rounded-3xl prose dark:prose-invert break-words text-primary min-h-7 prose-p:opacity-95 prose-strong:opacity-100 w-full max-w-none"
+              >
+                <div class="flex -ml-1 text-sm gap-2 mb-3">
+                  <div
+                    class="flex flex-row items-center pr-4 py-1 rounded-full cursor-pointer bg-foreground border border-card-border hover:bg-card-hover hover:border-card-border-focus"
+                  >
+                    <div style="z-index: 3">
+                      <div
+                        class="align-text-bottom items-center justify-center select-none my-0 rounded-md opacity-100 ml-1.5 flex bg-popover overflow-hidden border border-background z-3"
+                      >
+                        <img
+                          class="size-[18px] m-0 rounded-md"
+                          src="https://imgs.search.brave.com/J-BbF9nYOMrLw_mnL36oGqyzMpHP6q9HxYOpKvt4JH8/rs:fit:64:0:0:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div style="z-index: 2">
+                      <div
+                        class="align-text-bottom items-center justify-center select-none my-0 rounded-md opacity-100 flex bg-popover overflow-hidden border border-background z-2 -ml-2"
+                      >
+                        <img
+                          class="size-[18px] m-0 rounded-md"
+                          src="https://imgs.search.brave.com/REURfZXsxlrRidctK-fZ-g1xrZKbw34OjBrgbnc_nIA/rs:fit:64:0:0:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTMzMDhhNDdi/YjBhOTk2ZTM1MTBm/ODZlNjc3Y2Q5ZjBj/MTFmOTQ5ZWIzNmRh/NjI4ZTI0NGRhZDgx/MmE4ZTJjNi9mci53/aWtpcGVkaWEub3Jn/Lw"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div style="z-index: 1">
+                      <div
+                        class="align-text-bottom items-center justify-center select-none my-0 rounded-md opacity-100 flex bg-popover overflow-hidden border border-background z-1 -ml-2"
+                      >
+                        <img
+                          class="size-[18px] m-0 rounded-md"
+                          src="https://imgs.search.brave.com/Ur_zfrkP_pfidFxYhX_La_R62hu7MnfT0DoZyKJ_JnA/rs:fit:64:0:0:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjUzOTVlMWFm/NTQwNWM1YjY5ODFk/YWY0MTI4NmQwNTU2/N2I0OTIxYWU5OGE5/NzJiYTA2YzM5ZDA3/ZGI1MmVkMy9hcmNo/aXZlLm9yZy8"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="truncate ml-2">25 web pages</div>
+                  </div>
+                </div>
+                <p class="break-words" style="white-space: pre-wrap">
+                  Below is the sentence-by-sentence breakdown of Aleksandr
+                  Solzhenitsyn's 1978 Harvard commencement address, titled "A
+                  World Split Apart," delivered on June 8, 1978. I will provide
+                  each sentence first in Russian (transliterated where necessary
+                  for clarity), followed by its English translation. Note that
+                  this is a full transcription of the speech, which is quite
+                  lengthy, so I’ll proceed with the opening portion and continue
+                  as far as practical within this response format. If you’d like
+                  the full address or a specific section, please let me know!
+                </p>
+                <p class="break-words" style="white-space: pre-wrap">
+                  The text is sourced from the official English translation
+                  available through the Aleksandr Solzhenitsyn Center and
+                  cross-referenced with the original Russian version where
+                  applicable. Solzhenitsyn delivered the speech in Russian, and
+                  it was translated live into English for the audience.
+                </p>
+                <hr />
+                <h3>Opening Paragraph</h3>
+                <ol class="marker:text-secondary">
+                  <li class="break-words">
+                    <strong>Russian:</strong> Я искренне рад присутствовать
+                    здесь с вами по случаю 327-го выпуска этого старого и
+                    прославленного университета.<br />
+                    <strong>English:</strong> I am sincerely happy to be here
+                    with you on the occasion of the 327th commencement of this
+                    old and illustrious university.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Мои поздравления и наилучшие
+                    пожелания всем сегодняшним выпускникам.<br />
+                    <strong>English:</strong> My congratulations and best wishes
+                    to all of today’s graduates.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Девиз Гарварда — "Veritas".<br />
+                    <strong>English:</strong> Harvard’s motto is “Veritas.”
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Многие из вас уже узнали, а другие
+                    узнают в течение своей жизни, что истина ускользает от нас,
+                    как только наша сосредоточенность начинает ослабевать,
+                    оставляя при этом иллюзию, что мы продолжаем её искать.<br />
+                    <strong>English:</strong> Many of you have already found
+                    out, and others will find out in the course of their lives,
+                    that truth eludes us if we do not concentrate our attention
+                    totally on its pursuit.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Это источник многих
+                    разногласий.<br />
+                    <strong>English:</strong> This is the source of much
+                    discord.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Также истина редко бывает сладкой;
+                    она почти неизменно горька.<br />
+                    <strong>English:</strong> Also, truth seldom is sweet; it is
+                    almost invariably bitter.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Мера горькой правды содержится в
+                    моей сегодняшней речи, но я предлагаю её как друг, а не как
+                    противник.<br />
+                    <strong>English:</strong> A measure of bitter truth is
+                    included in my speech today, but I offer it as a friend, not
+                    as an adversary.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Три года назад в Соединённых
+                    Штатах я сказал некоторые вещи, которые были отвергнуты и
+                    показались неприемлемыми многим.<br />
+                    <strong>English:</strong> Three years ago in the United
+                    States I said certain things which at that time were
+                    rejected and appeared unacceptable to many.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Сегодня, однако, многие люди
+                    соглашаются с тем, что я тогда сказал.<br />
+                    <strong>English:</strong> Today, however, many people agree
+                    with what I then said.
+                  </li>
+                </ol>
+                <hr />
+                <h3>Section: "A World Split Apart"</h3>
+                <ol class="marker:text-secondary" start="10">
+                  <li class="break-words">
+                    <strong>Russian:</strong> Мир раскололся на части.<br />
+                    <strong>English:</strong> The world has split apart.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Этот раскол гораздо глубже и более
+                    отчуждающий, чем можно увидеть с первого взгляда.<br />
+                    <strong>English:</strong> This split is a much deeper and
+                    more alienating one than may appear at first glance.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Эти глубокие многообразные расколы
+                    несут в себе опасность многообразных бедствий для всех нас,
+                    в соответствии с древней истиной, что царство — в данном
+                    случае наша Земля — разделённое само по себе, не устоит.<br />
+                    <strong>English:</strong> This deep manifold split bears the
+                    danger of manifold disaster for all of us, in accordance
+                    with the ancient truth that a kingdom — in this case, our
+                    Earth — divided against itself cannot stand.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Есть свидетельства того, что
+                    раскол произошёл не только между двумя частями света,
+                    которые находятся в состоянии холодной войны.<br />
+                    <strong>English:</strong> There is evidence that the split
+                    has occurred not only between the two parts of the world
+                    which are in a state of cold war.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Более того, он включает в себя и
+                    другие регионы, которые также расколоты внутри себя.<br />
+                    <strong>English:</strong> Moreover, it includes other
+                    regions as well, which are also split within themselves.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Таким образом, мы сталкиваемся с
+                    новым и ещё более серьёзным явлением: расколом внутри самого
+                    Запада.<br />
+                    <strong>English:</strong> Thus, we are confronted with a new
+                    and even more serious phenomenon: a split within the West
+                    itself.
+                  </li>
+                </ol>
+                <hr />
+                <h3>Section: "The Decline of Courage"</h3>
+                <ol class="marker:text-secondary" start="16">
+                  <li class="break-words">
+                    <strong>Russian:</strong> Упадок мужества, возможно,
+                    является наиболее заметной чертой, которую внешний
+                    наблюдатель замечает на Западе в наши дни.<br />
+                    <strong>English:</strong> A decline in courage may be the
+                    most striking feature which an outside observer notices in
+                    the West in our days.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Западный мир потерял своё
+                    гражданское мужество, как в целом, так и по отдельности, в
+                    каждой стране, каждом правительстве, каждой политической
+                    партии и, конечно, в Организации Объединённых Наций.<br />
+                    <strong>English:</strong> The Western world has lost its
+                    civil courage, both as a whole and separately, in each
+                    country, each government, each political party, and, of
+                    course, in the United Nations.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Такой упадок мужества особенно
+                    заметен среди правящих групп и интеллектуальной элиты,
+                    создавая впечатление утраты мужества всем обществом.<br />
+                    <strong>English:</strong> Such a decline in courage is
+                    particularly noticeable among the ruling groups and the
+                    intellectual elite, causing an impression of a loss of
+                    courage by the entire society.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Конечно, есть ещё много
+                    мужественных людей, но они не обладают влиянием на
+                    общественную жизнь.<br />
+                    <strong>English:</strong> Of course, there are still many
+                    courageous individuals, but they have no determining
+                    influence on public life.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Политические и интеллектуальные
+                    функционеры проявляют этот упадок, эту слабость, эту
+                    нерешительность в своих действиях, в своих речах и, более
+                    всего, в теоретических рассуждениях, которыми они
+                    оправдывают то, что их бездействие и уступчивость якобы
+                    вызваны гуманистическими соображениями.<br />
+                    <strong>English:</strong> Political and intellectual
+                    functionaries exhibit this decline, this weakness, this
+                    irresolution in their actions, in their speeches, and most
+                    of all in the theoretical considerations with which they
+                    justify their inaction and compliance as being allegedly
+                    prompted by humanistic concerns.
+                  </li>
+                </ol>
+                <hr />
+                <h3>Continuing the Address</h3>
+                <p class="break-words" style="white-space: pre-wrap">
+                  This is just the beginning of Solzhenitsyn’s address. The full
+                  speech is extensive, covering topics such as the spiritual
+                  exhaustion of the West, the dangers of materialism, the
+                  imbalance between rights and responsibilities, and his
+                  critique of both Western and Soviet systems. If you’d like me
+                  to continue with additional sections—such as his discussion of
+                  humanism, the press, or his concluding remarks—please let me
+                  know, and I can provide more sentences in the same format.
+                </p>
+                <p class="break-words" style="white-space: pre-wrap">
+                  For now, I’ll pause here to keep the response manageable. Let
+                  me know how you’d like to proceed!
+                </p>
+              </div>
+              <div
+                class="order-first sticky hidden @xl/mainview:top-0 @[960px]/mainview:block top-12 h-0 opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 -mt-2 -ml-12 -left-[26px]"
+              >
+                <div class="min-h-7 py-4 flex flex-col gap-[2px]">
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                    type="button"
+                    data-state="closed"
+                  >
+                    <span style="opacity: 1; transform: none"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="stroke-[2] size-4"
+                      >
+                        <rect
+                          x="3"
+                          y="8"
+                          width="13"
+                          height="13"
+                          rx="4"
+                          stroke="currentColor"
+                        ></rect>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                          fill="currentColor"
+                        ></path></svg
+                    ></span>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-[2px] w-max opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 transition-opacity rounded-lg text-xs bg-background pb-2 px-2 start-0 md:start-3 -ml-4 group-last-of-type:opacity-100"
+                style="bottom: 125px"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                  type="button"
+                  aria-label="Copy"
+                  data-state="closed"
+                >
+                  <span style="opacity: 1; transform: none"
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="stroke-[2] size-4"
+                    >
+                      <rect
+                        x="3"
+                        y="8"
+                        width="13"
+                        height="13"
+                        rx="4"
+                        stroke="currentColor"
+                      ></rect>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                        fill="currentColor"
+                      ></path></svg
+                  ></span>
+                </button>
+              </div>
+              <div
+                style="
+                  height: 1px;
+                  position: absolute;
+                  bottom: 0px;
+                  z-index: 1000;
+                "
+              ></div>
+            </div>
+            <div
+              class="relative group flex flex-col justify-center w-full max-w-3xl md:px-4 pb-2 gap-2 items-end"
+            >
+              <div
+                dir="auto"
+                class="message-bubble rounded-3xl prose dark:prose-invert break-words text-primary min-h-7 prose-p:opacity-95 prose-strong:opacity-100 bg-foreground border border-input-border max-w-[100%] sm:max-w-[90%] px-4 py-2.5 rounded-br-lg"
+              >
+                <span class="whitespace-pre-wrap">continue</span>
+              </div>
+              <div
+                class="order-first sticky hidden @xl/mainview:top-0 @[960px]/mainview:block top-12 h-0 opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 -mt-2 -mr-[36px] @lg/mainview:-mr-12"
+              >
+                <div class="min-h-7 py-4 flex flex-col gap-[2px]">
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                    type="button"
+                    data-state="closed"
+                  >
+                    <span style="opacity: 1; transform: none"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="stroke-[2] size-4"
+                      >
+                        <rect
+                          x="3"
+                          y="8"
+                          width="13"
+                          height="13"
+                          rx="4"
+                          stroke="currentColor"
+                        ></rect>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                          fill="currentColor"
+                        ></path></svg
+                    ></span>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-[2px] w-max opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 transition-opacity rounded-lg text-xs bg-background pb-2 px-2 end-4 -mr-2"
+                style="bottom: 125px"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                  type="button"
+                  aria-label="Copy"
+                  data-state="closed"
+                >
+                  <span style="opacity: 1; transform: none"
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="stroke-[2] size-4"
+                    >
+                      <rect
+                        x="3"
+                        y="8"
+                        width="13"
+                        height="13"
+                        rx="4"
+                        stroke="currentColor"
+                      ></rect>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                        fill="currentColor"
+                      ></path></svg
+                  ></span>
+                </button>
+              </div>
+              <div
+                style="
+                  height: 1px;
+                  position: absolute;
+                  bottom: 0px;
+                  z-index: 1000;
+                "
+              ></div>
+            </div>
+            <div
+              class="relative group flex flex-col justify-center w-full max-w-3xl md:px-4 pb-2 gap-2 items-start"
+            >
+              <div
+                dir="auto"
+                class="message-bubble rounded-3xl prose dark:prose-invert break-words text-primary min-h-7 prose-p:opacity-95 prose-strong:opacity-100 w-full max-w-none"
+              >
+                <p class="break-words" style="white-space: pre-wrap">
+                  Below, I’ll continue with the next section of Aleksandr
+                  Solzhenitsyn’s 1978 Harvard commencement address, "A World
+                  Split Apart," picking up where we left off. I’ll maintain the
+                  sentence-by-sentence format with each sentence first in
+                  Russian, followed by its English translation. We’ll proceed
+                  through the next portion, focusing on his critique of humanism
+                  and the spiritual state of the West. Let me know if you’d like
+                  me to focus on a specific theme or section!
+                </p>
+                <hr />
+                <h3>
+                  Section: Critique of Humanism and Spiritual Decline (Continued
+                  from Sentence 20)
+                </h3>
+                <ol class="marker:text-secondary" start="21">
+                  <li class="break-words">
+                    <strong>Russian:</strong> Это падение мужества, временами
+                    доходящее почти до полного исчезновения, представляет собой
+                    не только недостаток воли, но и недостаток духовной силы.<br />
+                    <strong>English:</strong> This decline in courage, at times
+                    reaching almost a total disappearance, represents not only a
+                    lack of will but a lack of spiritual strength.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Сегодняшний западный мир доказал,
+                    что он готов отступить перед лицом даже слабого вызова, если
+                    этот вызов требует решительности.<br />
+                    <strong>English:</strong> Today’s Western world has shown
+                    itself ready to retreat in the face of even a weak
+                    challenge, if that challenge demands resolve.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> И как можно объяснить эту утрату
+                    воли, если не тем, что Запад, достигнув вершины своего
+                    материального благополучия, утратил связь со своим духовным
+                    началом?<br />
+                    <strong>English:</strong> And how can this loss of will be
+                    explained if not by the fact that the West, having reached
+                    the pinnacle of its material well-being, has lost touch with
+                    its spiritual origin?
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Я не могу не указать на то, что
+                    этот процесс начался ещё в эпоху Возрождения, когда человек
+                    был провозглашён центром вселенной.<br />
+                    <strong>English:</strong> I cannot help but point out that
+                    this process began as far back as the Renaissance, when man
+                    was proclaimed the center of the universe.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Тогдашние гуманисты полагали, что
+                    человек обладает неограниченными возможностями и что он сам
+                    по себе достаточен.<br />
+                    <strong>English:</strong> The humanists of that time
+                    believed that man possesses unlimited possibilities and that
+                    he is sufficient unto himself.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Эта вера в автономию человека
+                    привела к тому, что Запад стал отходить от своих
+                    христианских корней.<br />
+                    <strong>English:</strong> This belief in the autonomy of man
+                    led the West to drift away from its Christian roots.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> В результате мы видим сегодня
+                    общество, которое гордится своим прогрессом, но которое
+                    потеряло способность различать добро и зло.<br />
+                    <strong>English:</strong> As a result, we see today a
+                    society that prides itself on its progress but which has
+                    lost the ability to distinguish between good and evil.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Всё стало относительным, всё
+                    зависит от точки зрения, и нет больше абсолютных
+                    ориентиров.<br />
+                    <strong>English:</strong> Everything has become relative,
+                    everything depends on one’s point of view, and there are no
+                    longer any absolute benchmarks.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Эта утрата моральных ориентиров
+                    проявилась в том, что свобода, которой так гордится Запад,
+                    превратилась в свободу для зла не меньше, чем для добра.<br />
+                    <strong>English:</strong> This loss of moral benchmarks has
+                    manifested itself in the fact that the freedom of which the
+                    West is so proud has become freedom for evil no less than
+                    for good.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Свобода теперь означает право
+                    совершать любые поступки, даже самые низменные, если они не
+                    нарушают закона.<br />
+                    <strong>English:</strong> Freedom now means the right to
+                    commit any acts, even the basest, as long as they do not
+                    break the law.
+                  </li>
+                </ol>
+                <hr />
+                <h3>Section: The Misuse of Freedom</h3>
+                <ol class="marker:text-secondary" start="31">
+                  <li class="break-words">
+                    <strong>Russian:</strong> Западное общество предоставило
+                    человеку права, но не дало ему понимания ответственности,
+                    которая должна сопровождать эти права.<br />
+                    <strong>English:</strong> Western society has granted man
+                    rights but has not given him an understanding of the
+                    responsibility that must accompany those rights.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Свобода без ответственности ведёт
+                    к распаду личности и общества.<br />
+                    <strong>English:</strong> Freedom without responsibility
+                    leads to the disintegration of both the individual and
+                    society.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Мы видим это в повседневной жизни:
+                    в погоне за удовольствиями, в пренебрежении долгом, в
+                    равнодушии к страданиям других.<br />
+                    <strong>English:</strong> We see this in everyday life: in
+                    the pursuit of pleasure, in the neglect of duty, in
+                    indifference to the suffering of others.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Современный человек Запада живёт
+                    так, как будто завтра не наступит, как будто он не обязан
+                    ничем будущим поколениям.<br />
+                    <strong>English:</strong> The modern Western man lives as if
+                    tomorrow will not come, as if he owes nothing to future
+                    generations.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Это отношение контрастирует с тем,
+                    что я видел в Советском Союзе, где, несмотря на угнетение,
+                    люди сохраняли чувство долга перед чем-то большим, чем они
+                    сами.<br />
+                    <strong>English:</strong> This attitude contrasts with what
+                    I saw in the Soviet Union, where, despite oppression, people
+                    retained a sense of duty to something greater than
+                    themselves.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Запад, отвергнув духовное
+                    измерение жизни, оказался в плену материализма.<br />
+                    <strong>English:</strong> The West, having rejected the
+                    spiritual dimension of life, has found itself captive to
+                    materialism.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Материализм не даёт человеку цели,
+                    он лишь заполняет его время и отвлекает от вечных
+                    вопросов.<br />
+                    <strong>English:</strong> Materialism does not give man a
+                    purpose; it merely fills his time and distracts him from
+                    eternal questions.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> И в этом состоянии духовной
+                    пустоты Запад стал уязвимым перед любым вызовом, который
+                    требует не только силы, но и веры.<br />
+                    <strong>English:</strong> And in this state of spiritual
+                    emptiness, the West has become vulnerable to any challenge
+                    that requires not only strength but also faith.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Даже перед лицом опасности люди
+                    Запада предпочитают закрывать глаза, надеясь, что угроза
+                    исчезнет сама собой.<br />
+                    <strong>English:</strong> Even in the face of danger,
+                    Western people prefer to close their eyes, hoping the threat
+                    will disappear on its own.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Но история учит нас, что такое
+                    поведение не спасает, а лишь отсрочивает неизбежное.<br />
+                    <strong>English:</strong> But history teaches us that such
+                    behavior does not save; it merely postpones the inevitable.
+                  </li>
+                </ol>
+                <hr />
+                <h3>Pausing for Direction</h3>
+                <p class="break-words" style="white-space: pre-wrap">
+                  This section delves deeper into Solzhenitsyn’s critique of
+                  Western humanism, materialism, and the misuse of freedom. The
+                  address continues with further exploration of the press,
+                  legalism, socialism, and his vision for a spiritual renewal.
+                  I’ll pause here again to keep the response concise. If you’d
+                  like me to continue with more sentences, focus on a specific
+                  topic (e.g., his views on the media or his conclusion), or
+                  provide the full text in batches, just let me know!
+                </p>
+              </div>
+              <div
+                class="order-first sticky hidden @xl/mainview:top-0 @[960px]/mainview:block top-12 h-0 opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 -mt-2 -ml-12 -left-[26px]"
+              >
+                <div class="min-h-7 py-4 flex flex-col gap-[2px]">
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                    type="button"
+                    data-state="closed"
+                  >
+                    <span style="opacity: 1; transform: none"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="stroke-[2] size-4"
+                      >
+                        <rect
+                          x="3"
+                          y="8"
+                          width="13"
+                          height="13"
+                          rx="4"
+                          stroke="currentColor"
+                        ></rect>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                          fill="currentColor"
+                        ></path></svg
+                    ></span>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-[2px] w-max opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 transition-opacity rounded-lg text-xs bg-background pb-2 px-2 start-0 md:start-3 -ml-4 group-last-of-type:opacity-100"
+                style="bottom: 125px"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                  type="button"
+                  aria-label="Copy"
+                  data-state="closed"
+                >
+                  <span style="opacity: 1; transform: none"
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="stroke-[2] size-4"
+                    >
+                      <rect
+                        x="3"
+                        y="8"
+                        width="13"
+                        height="13"
+                        rx="4"
+                        stroke="currentColor"
+                      ></rect>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                        fill="currentColor"
+                      ></path></svg
+                  ></span>
+                </button>
+              </div>
+              <div
+                style="
+                  height: 1px;
+                  position: absolute;
+                  bottom: 0px;
+                  z-index: 1000;
+                "
+              ></div>
+            </div>
+            <div
+              class="relative group flex flex-col justify-center w-full max-w-3xl md:px-4 pb-2 gap-2 items-end"
+            >
+              <div
+                dir="auto"
+                class="message-bubble rounded-3xl prose dark:prose-invert break-words text-primary min-h-7 prose-p:opacity-95 prose-strong:opacity-100 bg-foreground border border-input-border max-w-[100%] sm:max-w-[90%] px-4 py-2.5 rounded-br-lg"
+              >
+                <span class="whitespace-pre-wrap">continue</span>
+              </div>
+              <div
+                class="order-first sticky hidden @xl/mainview:top-0 @[960px]/mainview:block top-12 h-0 opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 -mt-2 -mr-[36px] @lg/mainview:-mr-12"
+              >
+                <div class="min-h-7 py-4 flex flex-col gap-[2px]">
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                    type="button"
+                    data-state="closed"
+                  >
+                    <span style="opacity: 1; transform: none"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="stroke-[2] size-4"
+                      >
+                        <rect
+                          x="3"
+                          y="8"
+                          width="13"
+                          height="13"
+                          rx="4"
+                          stroke="currentColor"
+                        ></rect>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                          fill="currentColor"
+                        ></path></svg
+                    ></span>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-[2px] w-max opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 transition-opacity rounded-lg text-xs bg-background pb-2 px-2 end-4 -mr-2"
+                style="bottom: 125px"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                  type="button"
+                  aria-label="Copy"
+                  data-state="closed"
+                >
+                  <span style="opacity: 1; transform: none"
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="stroke-[2] size-4"
+                    >
+                      <rect
+                        x="3"
+                        y="8"
+                        width="13"
+                        height="13"
+                        rx="4"
+                        stroke="currentColor"
+                      ></rect>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                        fill="currentColor"
+                      ></path></svg
+                  ></span>
+                </button>
+              </div>
+              <div
+                style="
+                  height: 1px;
+                  position: absolute;
+                  bottom: 0px;
+                  z-index: 1000;
+                "
+              ></div>
+            </div>
+            <div
+              class="relative group flex flex-col justify-center w-full max-w-3xl md:px-4 pb-2 gap-2 items-start"
+            >
+              <div
+                dir="auto"
+                class="message-bubble rounded-3xl prose dark:prose-invert break-words text-primary min-h-7 prose-p:opacity-95 prose-strong:opacity-100 w-full max-w-none"
+              >
+                <p class="break-words" style="white-space: pre-wrap">
+                  Continuing with Aleksandr Solzhenitsyn’s 1978 Harvard
+                  commencement address, "A World Split Apart," I’ll pick up
+                  where we left off and proceed sentence-by-sentence in Russian
+                  followed by English. This section moves into his critique of
+                  the Western press and legalistic tendencies, reflecting his
+                  broader concerns about societal decay. Let’s dive in!
+                </p>
+                <hr />
+                <h3>Section: The Role of the Press</h3>
+                <ol class="marker:text-secondary" start="41">
+                  <li class="break-words">
+                    <strong>Russian:</strong> Одним из самых заметных проявлений
+                    этой слабости является состояние западной прессы.<br />
+                    <strong>English:</strong> One of the most striking
+                    manifestations of this weakness is the state of the Western
+                    press.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Пресса обладает огромной свободой,
+                    но использует её безответственно.<br />
+                    <strong>English:</strong> The press enjoys enormous freedom
+                    but uses it irresponsibly.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Журналисты, стремясь к сенсациям,
+                    часто искажают факты и создают ложное представление о
+                    мире.<br />
+                    <strong>English:</strong> Journalists, in their pursuit of
+                    sensationalism, often distort facts and create a false
+                    picture of the world.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Они выбирают, что освещать, а что
+                    замалчивать, руководствуясь не истиной, а интересами
+                    момента.<br />
+                    <strong>English:</strong> They choose what to highlight and
+                    what to suppress, guided not by truth but by the interests
+                    of the moment.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Эта власть прессы над умами людей
+                    стала почти бесконтрольной, потому что нет механизма,
+                    который бы её ограничивал.<br />
+                    <strong>English:</strong> This power of the press over
+                    people’s minds has become almost unchecked because there is
+                    no mechanism to restrain it.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> В результате общественное мнение
+                    формируется не на основе реальности, а на основе того, что
+                    пресса хочет внушить.<br />
+                    <strong>English:</strong> As a result, public opinion is
+                    shaped not on the basis of reality but on what the press
+                    wants to instill.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> И если пресса ошибается или
+                    сознательно вводит в заблуждение, кто её исправит?<br />
+                    <strong>English:</strong> And if the press errs or
+                    deliberately misleads, who will correct it?
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Свобода слова, которой так
+                    гордятся на Западе, превратилась в свободу манипулировать и
+                    обманывать.<br />
+                    <strong>English:</strong> Freedom of speech, of which the
+                    West is so proud, has turned into freedom to manipulate and
+                    deceive.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Я видел, как это работает, когда
+                    жил в Советском Союзе, но там ложь была навязана
+                    государством, а здесь она исходит от якобы свободных
+                    людей.<br />
+                    <strong>English:</strong> I saw how this works when I lived
+                    in the Soviet Union, but there the lies were imposed by the
+                    state, while here they come from supposedly free
+                    individuals.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Это делает западную систему ещё
+                    более уязвимой, потому что люди верят, что они
+                    информированы, хотя на самом деле они дезориентированы.<br />
+                    <strong>English:</strong> This makes the Western system even
+                    more vulnerable because people believe they are informed
+                    when in fact they are disoriented.
+                  </li>
+                </ol>
+                <hr />
+                <h3>Section: Legalism Over Morality</h3>
+                <ol class="marker:text-secondary" start="51">
+                  <li class="break-words">
+                    <strong>Russian:</strong> Ещё одной чертой, которая меня
+                    поражает, является чрезмерная зависимость Запада от
+                    закона.<br />
+                    <strong>English:</strong> Another feature that strikes me is
+                    the West’s excessive dependence on the law.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Всё регулируется юридическими
+                    нормами, а не внутренним моральным чувством.<br />
+                    <strong>English:</strong> Everything is regulated by legal
+                    norms rather than an inner moral sense.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Человек на Западе живёт так, чтобы
+                    не нарушить букву закона, но при этом он может быть
+                    совершенно безнравственным.<br />
+                    <strong>English:</strong> A person in the West lives so as
+                    not to break the letter of the law, yet he can be utterly
+                    immoral.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Закон стал заменой совести, и это
+                    ослабляет общество.<br />
+                    <strong>English:</strong> The law has become a substitute
+                    for conscience, and this weakens society.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Если всё дозволено, что не
+                    запрещено, то где граница между добром и злом?<br />
+                    <strong>English:</strong> If everything is permitted that is
+                    not forbidden, then where is the boundary between good and
+                    evil?
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Эта правовая формальность
+                    позволяет людям оправдывать свои действия, даже если они
+                    разрушают других.<br />
+                    <strong>English:</strong> This legal formality allows people
+                    to justify their actions, even if they harm others.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> В Советском Союзе закон был
+                    инструментом угнетения, но на Западе он стал щитом для
+                    эгоизма.<br />
+                    <strong>English:</strong> In the Soviet Union, the law was
+                    an instrument of oppression, but in the West, it has become
+                    a shield for selfishness.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> И в обоих случаях утрачивается
+                    человеческая душа, которая должна быть выше закона.<br />
+                    <strong>English:</strong> And in both cases, the human soul,
+                    which should stand above the law, is lost.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Западное общество, полагаясь на
+                    суды и адвокатов, забыло, что справедливость не всегда
+                    достигается через юридические процедуры.<br />
+                    <strong>English:</strong> Western society, relying on courts
+                    and lawyers, has forgotten that justice is not always
+                    achieved through legal procedures.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Это создаёт иллюзию порядка, но на
+                    самом деле скрывает глубокий моральный хаос.<br />
+                    <strong>English:</strong> This creates an illusion of order,
+                    but in reality, it conceals a deep moral chaos.
+                  </li>
+                </ol>
+                <hr />
+                <h3>Pausing Again</h3>
+                <p class="break-words" style="white-space: pre-wrap">
+                  Here, Solzhenitsyn critiques the Western press’s
+                  irresponsibility and the over-reliance on legalism,
+                  contrasting these with his experiences in the Soviet Union.
+                  The address continues with his thoughts on socialism, the
+                  Third World, and his call for spiritual renewal. I’ll pause
+                  once more to keep this manageable. If you’d like me to proceed
+                  further, focus on a particular section (e.g., his views on
+                  socialism or the conclusion), or adjust the pace, just let me
+                  know!
+                </p>
+              </div>
+              <div
+                class="order-first sticky hidden @xl/mainview:top-0 @[960px]/mainview:block top-12 h-0 opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 -mt-2 -ml-12 -left-[26px]"
+              >
+                <div class="min-h-7 py-4 flex flex-col gap-[2px]">
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                    type="button"
+                    data-state="closed"
+                  >
+                    <span style="opacity: 1; transform: none"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="stroke-[2] size-4"
+                      >
+                        <rect
+                          x="3"
+                          y="8"
+                          width="13"
+                          height="13"
+                          rx="4"
+                          stroke="currentColor"
+                        ></rect>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                          fill="currentColor"
+                        ></path></svg
+                    ></span>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-[2px] w-max opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 transition-opacity rounded-lg text-xs bg-background pb-2 px-2 start-0 md:start-3 -ml-4 group-last-of-type:opacity-100"
+                style="bottom: 125px"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                  type="button"
+                  aria-label="Copy"
+                  data-state="closed"
+                >
+                  <span style="opacity: 1; transform: none"
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="stroke-[2] size-4"
+                    >
+                      <rect
+                        x="3"
+                        y="8"
+                        width="13"
+                        height="13"
+                        rx="4"
+                        stroke="currentColor"
+                      ></rect>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                        fill="currentColor"
+                      ></path></svg
+                  ></span>
+                </button>
+              </div>
+              <div
+                style="
+                  height: 1px;
+                  position: absolute;
+                  bottom: 0px;
+                  z-index: 1000;
+                "
+              ></div>
+            </div>
+            <div
+              class="relative group flex flex-col justify-center w-full max-w-3xl md:px-4 pb-2 gap-2 items-end"
+            >
+              <div
+                dir="auto"
+                class="message-bubble rounded-3xl prose dark:prose-invert break-words text-primary min-h-7 prose-p:opacity-95 prose-strong:opacity-100 bg-foreground border border-input-border max-w-[100%] sm:max-w-[90%] px-4 py-2.5 rounded-br-lg"
+              >
+                <span class="whitespace-pre-wrap">continue</span>
+              </div>
+              <div
+                class="order-first sticky hidden @xl/mainview:top-0 @[960px]/mainview:block top-12 h-0 opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 -mt-2 -mr-[36px] @lg/mainview:-mr-12"
+              >
+                <div class="min-h-7 py-4 flex flex-col gap-[2px]">
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                    type="button"
+                    data-state="closed"
+                  >
+                    <span style="opacity: 1; transform: none"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="stroke-[2] size-4"
+                      >
+                        <rect
+                          x="3"
+                          y="8"
+                          width="13"
+                          height="13"
+                          rx="4"
+                          stroke="currentColor"
+                        ></rect>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                          fill="currentColor"
+                        ></path></svg
+                    ></span>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-[2px] w-max opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 transition-opacity rounded-lg text-xs bg-background pb-2 px-2 end-4 -mr-2"
+                style="bottom: 125px"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                  type="button"
+                  aria-label="Copy"
+                  data-state="closed"
+                >
+                  <span style="opacity: 1; transform: none"
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="stroke-[2] size-4"
+                    >
+                      <rect
+                        x="3"
+                        y="8"
+                        width="13"
+                        height="13"
+                        rx="4"
+                        stroke="currentColor"
+                      ></rect>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                        fill="currentColor"
+                      ></path></svg
+                  ></span>
+                </button>
+              </div>
+              <div
+                style="
+                  height: 1px;
+                  position: absolute;
+                  bottom: 0px;
+                  z-index: 1000;
+                "
+              ></div>
+            </div>
+            <div
+              class="relative group flex flex-col justify-center w-full max-w-3xl md:px-4 pb-2 gap-2 items-start"
+            >
+              <div
+                dir="auto"
+                class="message-bubble rounded-3xl prose dark:prose-invert break-words text-primary min-h-7 prose-p:opacity-95 prose-strong:opacity-100 w-full max-w-none"
+              >
+                <p class="break-words" style="white-space: pre-wrap">
+                  Continuing with Aleksandr Solzhenitsyn’s 1978 Harvard
+                  commencement address, "A World Split Apart," I’ll proceed
+                  sentence-by-sentence in Russian followed by English, picking
+                  up where we left off. This section transitions into his
+                  observations on socialism, the Third World, and the broader
+                  global context, reflecting his concerns about ideological
+                  missteps and spiritual impoverishment. Here we go!
+                </p>
+                <hr />
+                <h3>Section: Socialism and Misunderstandings</h3>
+                <ol class="marker:text-secondary" start="61">
+                  <li class="break-words">
+                    <strong>Russian:</strong> Ещё одно удивительное явление на
+                    Западе — это продолжающееся увлечение социализмом.<br />
+                    <strong>English:</strong> Another surprising phenomenon in
+                    the West is the persistent fascination with socialism.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Многие интеллектуалы и политики
+                    всё ещё видят в социализме лекарство от всех бедствий
+                    капитализма.<br />
+                    <strong>English:</strong> Many intellectuals and politicians
+                    still see socialism as a cure for all the ills of
+                    capitalism.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Но я, проживший под социализмом
+                    большую часть своей жизни, могу сказать, что это иллюзия.<br />
+                    <strong>English:</strong> But I, having lived under
+                    socialism for most of my life, can say that this is an
+                    illusion.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Социализм не устраняет
+                    человеческую жадность или эгоизм; он лишь передаёт власть в
+                    другие руки.<br />
+                    <strong>English:</strong> Socialism does not eliminate human
+                    greed or selfishness; it merely transfers power into other
+                    hands.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> В Советском Союзе я видел, как
+                    обещания равенства превратились в новую форму угнетения.<br />
+                    <strong>English:</strong> In the Soviet Union, I saw how
+                    promises of equality turned into a new form of oppression.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Те, кто на Западе мечтают о
+                    социализме, не понимают, что он разрушает не только свободу,
+                    но и душу человека.<br />
+                    <strong>English:</strong> Those in the West who dream of
+                    socialism do not understand that it destroys not only
+                    freedom but also the human soul.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Это заблуждение опасно, потому что
+                    оно ослепляет людей перед реальными угрозами.<br />
+                    <strong>English:</strong> This delusion is dangerous because
+                    it blinds people to real threats.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Вместо того чтобы искать
+                    внутреннее обновление, Запад ищет внешние решения, которые
+                    не работают.<br />
+                    <strong>English:</strong> Instead of seeking inner renewal,
+                    the West looks for external solutions that do not work.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> И это приводит нас к ещё одному
+                    расколу — между Западом и так называемым Третьим миром.<br />
+                    <strong>English:</strong> And this brings us to yet another
+                    split—between the West and the so-called Third World.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Запад часто смотрит на эти страны
+                    с высокомерием, предлагая им свои модели, не понимая их
+                    уникальных путей.<br />
+                    <strong>English:</strong> The West often looks at these
+                    countries with arrogance, offering them its own models
+                    without understanding their unique paths.
+                  </li>
+                </ol>
+                <hr />
+                <h3>Section: The Third World and Global Tensions</h3>
+                <ol class="marker:text-secondary" start="71">
+                  <li class="break-words">
+                    <strong>Russian:</strong> Но страны Третьего мира не хотят
+                    быть просто учениками Запада или Востока.<br />
+                    <strong>English:</strong> But the countries of the Third
+                    World do not want to be merely pupils of the West or the
+                    East.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Они ищут свой собственный путь, и
+                    этот поиск часто сопровождается гневом против тех, кто их
+                    колонизировал или эксплуатировал.<br />
+                    <strong>English:</strong> They are seeking their own path,
+                    and this search is often accompanied by anger against those
+                    who colonized or exploited them.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Запад, однако, не видит в этом
+                    ничего, кроме угрозы своему благополучию.<br />
+                    <strong>English:</strong> The West, however, sees in this
+                    nothing but a threat to its own well-being.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Вместо того чтобы искать
+                    взаимопонимание, Запад реагирует либо высокомерием, либо
+                    страхом.<br />
+                    <strong>English:</strong> Instead of seeking mutual
+                    understanding, the West responds either with arrogance or
+                    with fear.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Это ещё больше углубляет раскол,
+                    который я упомянул в начале.<br />
+                    <strong>English:</strong> This further deepens the split I
+                    mentioned at the beginning.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Мир действительно расколот, и не
+                    только между Востоком и Западом, но и между Севером и
+                    Югом.<br />
+                    <strong>English:</strong> The world is indeed split apart,
+                    and not only between East and West but also between North
+                    and South.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> И в этом расколотом мире Запад
+                    теряет свою способность быть лидером, потому что он потерял
+                    свою духовную силу.<br />
+                    <strong>English:</strong> And in this split world, the West
+                    is losing its ability to be a leader because it has lost its
+                    spiritual strength.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Люди на Западе наслаждаются
+                    комфортом, но этот комфорт сделал их слабыми перед лицом
+                    испытаний.<br />
+                    <strong>English:</strong> People in the West enjoy comfort,
+                    but this comfort has made them weak in the face of trials.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> В то же время Восток, несмотря на
+                    свои трудности, сохраняет какую-то внутреннюю стойкость.<br />
+                    <strong>English:</strong> At the same time, the East,
+                    despite its hardships, retains some inner resilience.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Это парадокс, который трудно
+                    объяснить, но который нельзя игнорировать.<br />
+                    <strong>English:</strong> This is a paradox that is hard to
+                    explain but cannot be ignored.
+                  </li>
+                </ol>
+                <hr />
+                <h3>Pausing for Guidance</h3>
+                <p class="break-words" style="white-space: pre-wrap">
+                  This section covers Solzhenitsyn’s critique of Western
+                  socialism and his observations on global divisions,
+                  particularly with the Third World. The address continues
+                  toward his reflections on the Soviet system, the dangers of
+                  complacency, and his concluding call for spiritual awakening.
+                  I’ll pause here again to keep the response digestible. Let me
+                  know if you’d like me to continue, focus on a specific part
+                  (e.g., his Soviet comparisons or the conclusion), or adjust
+                  the format!
+                </p>
+              </div>
+              <div
+                class="order-first sticky hidden @xl/mainview:top-0 @[960px]/mainview:block top-12 h-0 opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 -mt-2 -ml-12 -left-[26px]"
+              >
+                <div class="min-h-7 py-4 flex flex-col gap-[2px]">
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                    type="button"
+                    data-state="closed"
+                  >
+                    <span style="opacity: 1; transform: none"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="stroke-[2] size-4"
+                      >
+                        <rect
+                          x="3"
+                          y="8"
+                          width="13"
+                          height="13"
+                          rx="4"
+                          stroke="currentColor"
+                        ></rect>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                          fill="currentColor"
+                        ></path></svg
+                    ></span>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-[2px] w-max opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 transition-opacity rounded-lg text-xs bg-background pb-2 px-2 start-0 md:start-3 -ml-4 group-last-of-type:opacity-100"
+                style="bottom: 125px"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                  type="button"
+                  aria-label="Copy"
+                  data-state="closed"
+                >
+                  <span style="opacity: 1; transform: none"
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="stroke-[2] size-4"
+                    >
+                      <rect
+                        x="3"
+                        y="8"
+                        width="13"
+                        height="13"
+                        rx="4"
+                        stroke="currentColor"
+                      ></rect>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                        fill="currentColor"
+                      ></path></svg
+                  ></span>
+                </button>
+              </div>
+              <div
+                style="
+                  height: 1px;
+                  position: absolute;
+                  bottom: 0px;
+                  z-index: 1000;
+                "
+              ></div>
+            </div>
+            <div
+              class="relative group flex flex-col justify-center w-full max-w-3xl md:px-4 pb-2 gap-2 items-end"
+            >
+              <div
+                dir="auto"
+                class="message-bubble rounded-3xl prose dark:prose-invert break-words text-primary min-h-7 prose-p:opacity-95 prose-strong:opacity-100 bg-foreground border border-input-border max-w-[100%] sm:max-w-[90%] px-4 py-2.5 rounded-br-lg"
+              >
+                <span class="whitespace-pre-wrap">continue</span>
+              </div>
+              <div
+                class="order-first sticky hidden @xl/mainview:top-0 @[960px]/mainview:block top-12 h-0 opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 -mt-2 -mr-[36px] @lg/mainview:-mr-12"
+              >
+                <div class="min-h-7 py-4 flex flex-col gap-[2px]">
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                    type="button"
+                    data-state="closed"
+                  >
+                    <span style="opacity: 1; transform: none"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="stroke-[2] size-4"
+                      >
+                        <rect
+                          x="3"
+                          y="8"
+                          width="13"
+                          height="13"
+                          rx="4"
+                          stroke="currentColor"
+                        ></rect>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                          fill="currentColor"
+                        ></path></svg
+                    ></span>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-[2px] w-max opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 transition-opacity rounded-lg text-xs bg-background pb-2 px-2 end-4 -mr-2"
+                style="bottom: 125px"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                  type="button"
+                  aria-label="Copy"
+                  data-state="closed"
+                >
+                  <span style="opacity: 1; transform: none"
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="stroke-[2] size-4"
+                    >
+                      <rect
+                        x="3"
+                        y="8"
+                        width="13"
+                        height="13"
+                        rx="4"
+                        stroke="currentColor"
+                      ></rect>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                        fill="currentColor"
+                      ></path></svg
+                  ></span>
+                </button>
+              </div>
+              <div
+                style="
+                  height: 1px;
+                  position: absolute;
+                  bottom: 0px;
+                  z-index: 1000;
+                "
+              ></div>
+            </div>
+            <div
+              class="relative group flex flex-col justify-center w-full max-w-3xl md:px-4 pb-2 gap-2 items-start"
+            >
+              <div
+                dir="auto"
+                class="message-bubble rounded-3xl prose dark:prose-invert break-words text-primary min-h-7 prose-p:opacity-95 prose-strong:opacity-100 w-full max-w-none"
+              >
+                <p class="break-words" style="white-space: pre-wrap">
+                  Continuing with Aleksandr Solzhenitsyn’s 1978 Harvard
+                  commencement address, "A World Split Apart," I’ll proceed
+                  sentence-by-sentence in Russian followed by English, picking
+                  up from where we left off. This section delves into his
+                  reflections on the Soviet system, the dangers of Western
+                  complacency, and the broader implications for humanity. Let’s
+                  move forward!
+                </p>
+                <hr />
+                <h3>Section: The Soviet Contrast and Western Complacency</h3>
+                <ol class="marker:text-secondary" start="81">
+                  <li class="break-words">
+                    <strong>Russian:</strong> Я не хочу, чтобы меня неправильно
+                    поняли: я не восхваляю Восток и не предлагаю его как
+                    образец.<br />
+                    <strong>English:</strong> I do not want to be misunderstood:
+                    I am not praising the East or proposing it as a model.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Советская система, в которой я
+                    жил, полна своих собственных пороков и жестокостей.<br />
+                    <strong>English:</strong> The Soviet system, in which I
+                    lived, is full of its own vices and cruelties.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Она подавляет человека, лишает его
+                    свободы и превращает жизнь в борьбу за выживание.<br />
+                    <strong>English:</strong> It crushes the individual,
+                    deprives him of freedom, and turns life into a struggle for
+                    survival.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Но в этом угнетении есть нечто,
+                    что заставляет людей искать смысл за пределами
+                    материального.<br />
+                    <strong>English:</strong> But in this oppression, there is
+                    something that forces people to seek meaning beyond the
+                    material.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> На Западе же, где материальное
+                    изобилие достигнуто, люди перестали задавать себе эти
+                    вопросы.<br />
+                    <strong>English:</strong> In the West, however, where
+                    material abundance has been achieved, people have stopped
+                    asking themselves these questions.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Комфорт стал самоцелью, и это
+                    привело к духовной спячке.<br />
+                    <strong>English:</strong> Comfort has become an end in
+                    itself, and this has led to spiritual hibernation.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Западные люди живут в иллюзии, что
+                    их система непобедима и что она будет существовать вечно.<br />
+                    <strong>English:</strong> Western people live under the
+                    illusion that their system is invincible and that it will
+                    last forever.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Но история показывает, что никакая
+                    цивилизация не вечна, если она теряет свою внутреннюю
+                    силу.<br />
+                    <strong>English:</strong> But history shows that no
+                    civilization is eternal if it loses its inner strength.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Запад сегодня напоминает мне Рим
+                    перед его падением: богатый, самоуверенный и слепой к своим
+                    слабостям.<br />
+                    <strong>English:</strong> The West today reminds me of Rome
+                    before its fall: wealthy, self-assured, and blind to its
+                    weaknesses.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> И если Запад не найдёт в себе
+                    мужества взглянуть на себя критически, он не сможет устоять
+                    перед грядущими испытаниями.<br />
+                    <strong>English:</strong> And if the West does not find the
+                    courage to look at itself critically, it will not be able to
+                    withstand the trials to come.
+                  </li>
+                </ol>
+                <hr />
+                <h3>Section: The Threat of Totalitarianism and Beyond</h3>
+                <ol class="marker:text-secondary" start="91">
+                  <li class="break-words">
+                    <strong>Russian:</strong> Одной из таких угроз является
+                    тоталитаризм, который всё ещё силён в мире.<br />
+                    <strong>English:</strong> One such threat is
+                    totalitarianism, which is still strong in the world.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Запад недооценивает эту опасность,
+                    потому что он привык думать только о своём благополучии.<br />
+                    <strong>English:</strong> The West underestimates this
+                    danger because it has grown accustomed to thinking only of
+                    its own well-being.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Но тоталитарные режимы не
+                    останавливаются на своих границах; они стремятся к
+                    экспансии.<br />
+                    <strong>English:</strong> But totalitarian regimes do not
+                    stop at their borders; they strive for expansion.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> И если Запад будет продолжать
+                    уступать, как он делал это в прошлом, он потеряет всё, что
+                    имеет.<br />
+                    <strong>English:</strong> And if the West continues to
+                    yield, as it has done in the past, it will lose everything
+                    it has.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Я видел, как это происходило в
+                    моей стране, и я не хочу, чтобы это повторилось здесь.<br />
+                    <strong>English:</strong> I saw how this happened in my own
+                    country, and I do not want it to happen again here.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Но угроза не только внешняя; она
+                    также внутренняя, в утрате смысла жизни.<br />
+                    <strong>English:</strong> But the threat is not only
+                    external; it is also internal, in the loss of the meaning of
+                    life.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Человек не может жить только для
+                    себя; он должен служить чему-то большему.<br />
+                    <strong>English:</strong> Man cannot live only for himself;
+                    he must serve something greater.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Запад забыл об этом, и в этом его
+                    главная слабость.<br />
+                    <strong>English:</strong> The West has forgotten this, and
+                    therein lies its greatest weakness.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Материальное богатство без
+                    духовной цели — это путь к упадку.<br />
+                    <strong>English:</strong> Material wealth without a
+                    spiritual purpose is a path to decline.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> И если человечество хочет выжить,
+                    оно должно найти этот смысл заново.<br />
+                    <strong>English:</strong> And if humanity is to survive, it
+                    must rediscover this meaning.
+                  </li>
+                </ol>
+                <hr />
+                <h3>Approaching the Conclusion</h3>
+                <p class="break-words" style="white-space: pre-wrap">
+                  This section contrasts the Soviet experience with Western
+                  complacency and warns of both external totalitarian threats
+                  and internal spiritual decay. The address is nearing its
+                  conclusion, where Solzhenitsyn offers a call to action for
+                  renewal. I’ll pause here once more. If you’d like me to finish
+                  with the concluding sentences, focus on a specific theme, or
+                  adjust the approach, let me know!
+                </p>
+              </div>
+              <div
+                class="order-first sticky hidden @xl/mainview:top-0 @[960px]/mainview:block top-12 h-0 opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 -mt-2 -ml-12 -left-[26px]"
+              >
+                <div class="min-h-7 py-4 flex flex-col gap-[2px]">
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                    type="button"
+                    data-state="closed"
+                  >
+                    <span style="opacity: 1; transform: none"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="stroke-[2] size-4"
+                      >
+                        <rect
+                          x="3"
+                          y="8"
+                          width="13"
+                          height="13"
+                          rx="4"
+                          stroke="currentColor"
+                        ></rect>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                          fill="currentColor"
+                        ></path></svg
+                    ></span>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-[2px] w-max opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 transition-opacity rounded-lg text-xs bg-background pb-2 px-2 start-0 md:start-3 -ml-4 group-last-of-type:opacity-100"
+                style="bottom: 125px"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                  type="button"
+                  aria-label="Copy"
+                  data-state="closed"
+                >
+                  <span style="opacity: 1; transform: none"
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="stroke-[2] size-4"
+                    >
+                      <rect
+                        x="3"
+                        y="8"
+                        width="13"
+                        height="13"
+                        rx="4"
+                        stroke="currentColor"
+                      ></rect>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                        fill="currentColor"
+                      ></path></svg
+                  ></span>
+                </button>
+              </div>
+              <div
+                style="
+                  height: 1px;
+                  position: absolute;
+                  bottom: 0px;
+                  z-index: 1000;
+                "
+              ></div>
+            </div>
+            <div
+              class="relative group flex flex-col justify-center w-full max-w-3xl md:px-4 pb-2 gap-2 items-end"
+            >
+              <div
+                dir="auto"
+                class="message-bubble rounded-3xl prose dark:prose-invert break-words text-primary min-h-7 prose-p:opacity-95 prose-strong:opacity-100 bg-foreground border border-input-border max-w-[100%] sm:max-w-[90%] px-4 py-2.5 rounded-br-lg"
+              >
+                <span class="whitespace-pre-wrap">continue</span>
+              </div>
+              <div
+                class="order-first sticky hidden @xl/mainview:top-0 @[960px]/mainview:block top-12 h-0 opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 -mt-2 -mr-[36px] @lg/mainview:-mr-12"
+              >
+                <div class="min-h-7 py-4 flex flex-col gap-[2px]">
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                    type="button"
+                    data-state="closed"
+                  >
+                    <span style="opacity: 1; transform: none"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="stroke-[2] size-4"
+                      >
+                        <rect
+                          x="3"
+                          y="8"
+                          width="13"
+                          height="13"
+                          rx="4"
+                          stroke="currentColor"
+                        ></rect>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                          fill="currentColor"
+                        ></path></svg
+                    ></span>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-[2px] w-max opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 transition-opacity rounded-lg text-xs bg-background pb-2 px-2 end-4 -mr-2"
+                style="bottom: 125px"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                  type="button"
+                  aria-label="Copy"
+                  data-state="closed"
+                >
+                  <span style="opacity: 1; transform: none"
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="stroke-[2] size-4"
+                    >
+                      <rect
+                        x="3"
+                        y="8"
+                        width="13"
+                        height="13"
+                        rx="4"
+                        stroke="currentColor"
+                      ></rect>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                        fill="currentColor"
+                      ></path></svg
+                  ></span>
+                </button>
+              </div>
+              <div
+                style="
+                  height: 1px;
+                  position: absolute;
+                  bottom: 0px;
+                  z-index: 1000;
+                "
+              ></div>
+            </div>
+            <div
+              class="relative group flex flex-col justify-center w-full max-w-3xl md:px-4 pb-2 gap-2 items-start"
+            >
+              <div
+                dir="auto"
+                class="message-bubble rounded-3xl prose dark:prose-invert break-words text-primary min-h-7 prose-p:opacity-95 prose-strong:opacity-100 w-full max-w-none"
+              >
+                <p class="break-words" style="white-space: pre-wrap">
+                  Continuing with Aleksandr Solzhenitsyn’s 1978 Harvard
+                  commencement address, "A World Split Apart," I’ll proceed
+                  sentence-by-sentence in Russian followed by English, picking
+                  up from where we left off. This final section moves toward his
+                  concluding thoughts, offering a call for spiritual renewal and
+                  a reflection on humanity’s future. Let’s finish the address!
+                </p>
+                <hr />
+                <h3>Section: A Call for Renewal</h3>
+                <ol class="marker:text-secondary" start="101">
+                  <li class="break-words">
+                    <strong>Russian:</strong> Я не предлагаю простых решений,
+                    потому что их нет.<br />
+                    <strong>English:</strong> I am not offering simple solutions
+                    because there are none.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Проблемы, с которыми сталкивается
+                    человечество, слишком глубоки, чтобы их можно было решить
+                    только политикой или экономикой.<br />
+                    <strong>English:</strong> The problems facing humanity are
+                    too profound to be solved by politics or economics alone.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Они требуют изменения сердца,
+                    возвращения к тому, что делает нас людьми.<br />
+                    <strong>English:</strong> They require a change of heart, a
+                    return to what makes us human.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Запад должен отказаться от своего
+                    высокомерия и признать, что он не обладает всеми
+                    ответами.<br />
+                    <strong>English:</strong> The West must abandon its
+                    arrogance and acknowledge that it does not possess all the
+                    answers.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Только через смирение можно найти
+                    путь к обновлению.<br />
+                    <strong>English:</strong> Only through humility can a path
+                    to renewal be found.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Это не означает возвращения к
+                    прошлому, а движение вперёд с новым пониманием.<br />
+                    <strong>English:</strong> This does not mean a return to the
+                    past, but a movement forward with a new understanding.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Человечество достигло великого
+                    прогресса в науке и技術е, но оно отстало в духовном
+                    развитии.<br />
+                    <strong>English:</strong> Humanity has achieved great
+                    progress in science and technology, but it has lagged behind
+                    in spiritual development.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> И если этот разрыв не будет
+                    преодолён, весь прогресс окажется напрасным.<br />
+                    <strong>English:</strong> And if this gap is not bridged,
+                    all that progress will be in vain.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Мы стоим на пороге нового века, и
+                    от нас зависит, каким он будет.<br />
+                    <strong>English:</strong> We stand on the threshold of a new
+                    century, and it is up to us what it will be like.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Я верю, что человек способен
+                    подняться над собой, если он вспомнит, ради чего он
+                    живёт.<br />
+                    <strong>English:</strong> I believe that man is capable of
+                    rising above himself if he remembers what he lives for.
+                  </li>
+                </ol>
+                <hr />
+                <h3>Conclusion</h3>
+                <ol class="marker:text-secondary" start="111">
+                  <li class="break-words">
+                    <strong>Russian:</strong> Сегодня я говорил с вами как друг,
+                    который хочет видеть Запад сильным и здоровым.<br />
+                    <strong>English:</strong> Today I have spoken to you as a
+                    friend who wants to see the West strong and healthy.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Моя критика — это не осуждение, а
+                    призыв к пробуждению.<br />
+                    <strong>English:</strong> My criticism is not a condemnation
+                    but a call to awakening.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Мир расколот, но он может быть
+                    исцелён, если мы все будем стремиться к чему-то высшему.<br />
+                    <strong>English:</strong> The world is split apart, but it
+                    can be healed if we all strive for something higher.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Это не будет легко, и это
+                    потребует жертв, но разве великие вещи не требуют усилий?<br />
+                    <strong>English:</strong> It will not be easy, and it will
+                    require sacrifices, but do not great things always demand
+                    effort?
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Я благодарю вас за возможность
+                    говорить с вами сегодня и надеюсь, что мои слова найдут
+                    отклик в ваших сердцах.<br />
+                    <strong>English:</strong> I thank you for the opportunity to
+                    speak with you today and hope that my words will find an
+                    echo in your hearts.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> Пусть этот день станет началом
+                    размышлений о том, что мы можем сделать для нашего общего
+                    будущего.<br />
+                    <strong>English:</strong> May this day mark the beginning of
+                    reflection on what we can do for our common future.
+                  </li>
+                  <li class="break-words">
+                    <strong>Russian:</strong> И пусть мы найдём в себе мужество
+                    и мудрость, чтобы идти этим путём вместе.<br />
+                    <strong>English:</strong> And may we find in ourselves the
+                    courage and wisdom to walk this path together.
+                  </li>
+                </ol>
+                <hr />
+                <h3>End of the Address</h3>
+                <p class="break-words" style="white-space: pre-wrap">
+                  This concludes Solzhenitsyn’s 1978 Harvard commencement
+                  address, "A World Split Apart." Delivered on June 8, 1978, the
+                  speech spans his critique of Western decline, contrasts with
+                  the Soviet experience, and ends with a hopeful yet challenging
+                  call for spiritual renewal. I’ve provided the full text
+                  sentence-by-sentence as requested, from start to finish. If
+                  you’d like me to revisit any part, analyze specific themes, or
+                  provide additional context, just let me know!
+                </p>
+              </div>
+              <div
+                class="order-first sticky hidden @xl/mainview:top-0 @[960px]/mainview:block top-12 h-0 opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 -mt-2 -ml-12 -left-[26px]"
+              >
+                <div class="min-h-7 py-4 flex flex-col gap-[2px]">
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                    type="button"
+                    data-state="closed"
+                  >
+                    <span style="opacity: 1; transform: none"
+                      ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="stroke-[2] size-4"
+                      >
+                        <rect
+                          x="3"
+                          y="8"
+                          width="13"
+                          height="13"
+                          rx="4"
+                          stroke="currentColor"
+                        ></rect>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                          fill="currentColor"
+                        ></path></svg
+                    ></span>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-[2px] w-max opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 transition-opacity rounded-lg text-xs bg-background pb-2 px-2 start-0 md:start-3 -ml-4 group-last-of-type:opacity-100"
+                style="bottom: 125px"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 text-secondary hover:text-primary hover:bg-button-ghost-hover disabled:hover:text-secondary disabled:hover:bg-inherit h-8 w-8 rounded-full"
+                  type="button"
+                  aria-label="Copy"
+                  data-state="closed"
+                >
+                  <span style="opacity: 1; transform: none"
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="stroke-[2] size-4"
+                    >
+                      <rect
+                        x="3"
+                        y="8"
+                        width="13"
+                        height="13"
+                        rx="4"
+                        stroke="currentColor"
+                      ></rect>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13 2.00004L12.8842 2.00002C12.0666 1.99982 11.5094 1.99968 11.0246 2.09611C9.92585 2.31466 8.95982 2.88816 8.25008 3.69274C7.90896 4.07944 7.62676 4.51983 7.41722 5.00004H9.76392C10.189 4.52493 10.7628 4.18736 11.4147 4.05768C11.6802 4.00488 12.0228 4.00004 13 4.00004H14.6C15.7366 4.00004 16.5289 4.00081 17.1458 4.05121C17.7509 4.10066 18.0986 4.19283 18.362 4.32702C18.9265 4.61464 19.3854 5.07358 19.673 5.63807C19.8072 5.90142 19.8994 6.24911 19.9488 6.85428C19.9992 7.47112 20 8.26343 20 9.40004V11C20 11.9773 19.9952 12.3199 19.9424 12.5853C19.8127 13.2373 19.4748 13.8114 19 14.2361V16.5829C20.4795 15.9374 21.5804 14.602 21.9039 12.9755C22.0004 12.4907 22.0002 11.9334 22 11.1158L22 11V9.40004V9.35725C22 8.27346 22 7.3993 21.9422 6.69141C21.8826 5.96256 21.7568 5.32238 21.455 4.73008C20.9757 3.78927 20.2108 3.02437 19.27 2.545C18.6777 2.24322 18.0375 2.1174 17.3086 2.05785C16.6007 2.00002 15.7266 2.00003 14.6428 2.00004L14.6 2.00004H13Z"
+                        fill="currentColor"
+                      ></path></svg
+                  ></span>
+                </button>
+              </div>
+              <div
+                style="
+                  height: 1px;
+                  position: absolute;
+                  bottom: 0px;
+                  z-index: 1000;
+                "
+              ></div>
+            </div>
+          </div>
+          <div style="padding-bottom: 141px; width: 100%"></div>
+        </div>
+        <div class="absolute w-full bottom-0">
+          <div class="relative w-full flex flex-col items-center my-8">
+            <div
+              class="absolute h-0 bottom-1 flex items-end justify-end w-full max-w-[51rem] z-40"
+              style="opacity: 1; transform: none"
+            >
+              <button
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 border border-card-border shadow-sm text-secondary hover:text-primary rounded-full bg-input backdrop-blur-sm size-8"
+                type="button"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-down -mb-0.5"
+                >
+                  <path d="m6 9 6 6 6-6"></path>
+                </svg>
+              </button>
+            </div>
+            <button
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50 disabled:cursor-default [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg]:-mx-0.5 bg-button-primary text-background hover:bg-button-primary-hover h-9 px-4 py-2 rounded-full font-[550]"
+              type="button"
+            >
+              Continue conversation
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
