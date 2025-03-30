@@ -1,5 +1,4 @@
-import sqlite3 from 'sqlite3';
-import { promisify } from 'util';
+import Database from 'better-sqlite3';
 
 interface WordData {
     word: string;
@@ -7,29 +6,15 @@ interface WordData {
     wiktionary: string | null;
 }
 
-const db = new sqlite3.Database('words.db');
+// Open database with better-sqlite3
+const db = new Database('words.db');
 
-// Correctly promisify database operations
-const runAsync = (sql: string, params: any[] = []): Promise<void> => {
-    return new Promise((resolve, reject) => {
-        db.run(sql, params, (err) => {
-            if (err) reject(err);
-            else resolve();
-        });
-    });
-};
-
-const getAsync = (sql: string, params: any[] = []): Promise<any> => {
-    return new Promise((resolve, reject) => {
-        db.get(sql, params, (err, row) => {
-            if (err) reject(err);
-            else resolve(row);
-        });
-    });
-};
+// Enable foreign keys and WAL mode for better performance
+db.pragma('foreign_keys = ON');
+db.pragma('journal_mode = WAL');
 
 // Create table if it doesn't exist
-db.run(`
+db.exec(`
     CREATE TABLE IF NOT EXISTS words (
         word TEXT PRIMARY KEY,
         indices TEXT,
@@ -37,21 +22,46 @@ db.run(`
     )
 `);
 
-export async function storeWordData(word: string, indices: number[], wiktionary: string | null): Promise<void> {
-    await runAsync(
-        'INSERT OR REPLACE INTO words (word, indices, wiktionary) VALUES (?, ?, ?)',
-        [word, JSON.stringify(indices), wiktionary]
-    );
+// Prepare statements for better performance
+const insertStmt = db.prepare(`
+    INSERT OR REPLACE INTO words (word, indices, wiktionary)
+    VALUES (?, ?, ?)
+`);
+
+const getWordStmt = db.prepare(`
+    SELECT word, indices, wiktionary
+    FROM words
+    WHERE word = ?
+`);
+
+const getAllWordsStmt = db.prepare(`
+    SELECT word, indices, wiktionary
+    FROM words
+`);
+
+export function storeWordData(word: string, indices: number[], wiktionary: string | null): void {
+    insertStmt.run(word, JSON.stringify(indices), wiktionary);
 }
 
-export async function getWordData(word: string): Promise<WordData | null> {
-    const result = await getAsync('SELECT * FROM words WHERE word = ?', [word]);
-    if (result) {
-        return {
-            word: result.word,
-            indices: JSON.parse(result.indices),
-            wiktionary: result.wiktionary
-        };
-    }
-    return null;
+export function getWordData(word: string): WordData | undefined {
+    const row = getWordStmt.get(word);
+    if (!row) return undefined;
+
+    return {
+        word: row.word,
+        indices: JSON.parse(row.indices),
+        wiktionary: row.wiktionary
+    };
 }
+
+export function getAllWords(): WordData[] {
+    const rows = getAllWordsStmt.all();
+    return rows.map(row => ({
+        word: row.word,
+        indices: JSON.parse(row.indices),
+        wiktionary: row.wiktionary
+    }));
+}
+
+// Clean up when the application exits
+process.on('exit', () => db.close());

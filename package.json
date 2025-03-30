@@ -7,34 +7,35 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"process-content": "tsx scripts/processContent.ts",
-		"analyze-words": "tsx scripts/analyzeWords.ts"
+		"analyze-words": "tsx scripts/analyzeWords.ts",
+		"rebuild-sqlite": "npm rebuild better-sqlite3"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^4.0.0",
-		"@sveltejs/kit": "^2.16.0",
+		"@lucide/svelte": "^0.485.0",
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/kit": "^2.20.2",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
-		"@tailwindcss/vite": "^4.0.0",
-		"@types/jsdom": "^21.1.7",
-		"@types/sqlite3": "^3.1.11",
+		"autoprefixer": "^10.4.21",
+		"bits-ui": "^1.3.14",
+		"class-variance-authority": "^0.7.1",
+		"clsx": "^2.1.1",
+		"postcss": "^8.5.3",
+		"postcss-import": "^15.1.0",
 		"svelte": "^5.0.0",
-		"svelte-check": "^4.0.0",
-		"tailwindcss": "^4.0.0",
-		"tsx": "^4.0.0",
+		"svelte-check": "^3.6.0",
+		"tailwind-merge": "^3.0.2",
+		"tailwind-variants": "^1.0.0",
+		"tailwindcss": "^4.0.17",
+		"tailwindcss-animate": "^1.0.7",
 		"typescript": "^5.0.0",
 		"vite": "^6.0.0"
 	},
 	"dependencies": {
+		"better-sqlite3": "^9.2.0",
 		"jsdom": "^26.0.0",
-		"sqlite3": "^5.1.7"
-	},
-	"pnpm": {
-		"onlyBuiltDependencies": [
-			"esbuild",
-			"sqlite3"
-		]
+		"shadcn-svelte": "^0.14.0"
 	}
 }

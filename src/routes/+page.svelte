@@ -2,10 +2,11 @@
   import TabedPane from "$lib/TabedPane.svelte";
   import type { PageData } from "./$types";
 
-  export let data: PageData;
+  // let { data } = { data: PageData } = $props();
+  let { data } = $props();
 
-  let selectedWord: string | null = null;
-  let wordDefinition: string | null = null;
+  let selectedWord: string | null = $state(null);
+  let wordDefinition: string | null = $state(null);
 
   async function showDefinition(word: string) {
     selectedWord = word;
@@ -24,7 +25,6 @@
       wordDefinition = wordDefinition!.replace(/\\n/g, "");
 
       console.log(wordDefinition);
-      // console.log(typeof wordDefinition, wordDefinition);
     } catch (error) {
       console.error("Error fetching definition:", error);
       wordDefinition = "Error loading definition";
@@ -49,22 +49,26 @@
 
 <main>
   {#if data?.processedHtml}
-    <div on:click={handleClick}>
+    <button onclick={handleClick}>
       {@html data.processedHtml}
-    </div>
+    </button>
   {/if}
 
   {#if selectedWord && wordDefinition}
-    <div class="definition-popup-overlay" on:click={closeDefinition}></div>
+    <button
+      aria-label="Close"
+      class="definition-popup-overlay"
+      onclick={closeDefinition}
+    ></button>
     <div class="definition-popup">
       <h3>Definition for "{selectedWord}"</h3>
       <div class="definition-content">
         {@html wordDefinition}
       </div>
-      <button class="close-button" on:click={closeDefinition}>Close</button>
+      <button class="close-button" onclick={closeDefinition}>Close</button>
     </div>
   {/if}
-  <TabedPane />
+  <!-- <TabedPane /> -->
 </main>
 
 <style>

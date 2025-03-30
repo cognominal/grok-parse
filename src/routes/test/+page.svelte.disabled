@@ -1,0 +1,183 @@
+<script lang="ts">
+  import { Button } from "$lib/components/ui/button";
+  import { Input } from "$lib/components/ui/input";
+  import { Label } from "$lib/components/ui/label";
+  import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+  } from "$lib/components/ui/card";
+  import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+  } from "$lib/components/ui/select";
+  import {
+    Tabs,
+    TabsContent,
+    TabsList,
+    TabsTrigger,
+  } from "$lib/components/ui/tabs";
+  import { Checkbox } from "$lib/components/ui/checkbox";
+  import { Switch } from "$lib/components/ui/switch";
+
+  let switchValue = $state(false);
+  let checkboxValue = $state(false);
+</script>
+
+<div class="container mx-auto p-8 space-y-8">
+  <h1 class="text-4xl font-bold mb-8">shadcn-svelte Components</h1>
+
+  <!-- Buttons Section -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-semibold">Buttons</h2>
+    <div class="flex flex-wrap gap-4">
+      <Button variant="default">Default</Button>
+      <Button variant="destructive">Destructive</Button>
+      <Button variant="outline">Outline</Button>
+      <Button variant="secondary">Secondary</Button>
+      <Button variant="ghost">Ghost</Button>
+      <Button variant="link">Link</Button>
+    </div>
+  </section>
+
+  <!-- Form Controls -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-semibold">Form Controls</h2>
+    <div class="grid gap-4 max-w-sm">
+      <div class="space-y-2">
+        <Label for="email">Email</Label>
+        <Input type="email" id="email" placeholder="Enter your email" />
+      </div>
+
+      <div class="flex items-center space-x-2">
+        <Switch id="airplane-mode" bind:checked={switchValue} />
+        <Label for="airplane-mode">Airplane Mode</Label>
+      </div>
+
+      <div class="flex items-center space-x-2">
+        <Checkbox id="terms" bind:checked={checkboxValue} />
+        <Label for="terms">Accept terms and conditions</Label>
+      </div>
+    </div>
+  </section>
+
+  <!-- Card Example -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-semibold">Card</h2>
+    <Card class="max-w-md">
+      <CardHeader>
+        <CardTitle>Create project</CardTitle>
+        <CardDescription>Deploy your new project in one-click.</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <form class="space-y-4">
+          <div class="space-y-2">
+            <Label for="name">Name</Label>
+            <Input id="name" placeholder="Project name" />
+          </div>
+          <div class="space-y-2">
+            <Label for="framework">Framework</Label>
+            <Select>
+              <SelectTrigger>
+                <SelectValue placeholder="Select framework" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="next">Next.js</SelectItem>
+                <SelectItem value="sveltekit">SvelteKit</SelectItem>
+                <SelectItem value="astro">Astro</SelectItem>
+                <SelectItem value="nuxt">Nuxt.js</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+        </form>
+      </CardContent>
+      <CardFooter class="flex justify-between">
+        <Button variant="ghost">Cancel</Button>
+        <Button>Deploy</Button>
+      </CardFooter>
+    </Card>
+  </section>
+
+  <!-- Tabs Example -->
+  <section class="space-y-4">
+    <h2 class="text-2xl font-semibold">Tabs</h2>
+    <Tabs value="account" class="w-[400px]">
+      <TabsList>
+        <TabsTrigger value="account">Account</TabsTrigger>
+        <TabsTrigger value="password">Password</TabsTrigger>
+        <TabsTrigger value="settings">Settings</TabsTrigger>
+      </TabsList>
+      <TabsContent value="account">
+        <Card>
+          <CardHeader>
+            <CardTitle>Account</CardTitle>
+            <CardDescription>
+              Make changes to your account settings.
+            </CardDescription>
+          </CardHeader>
+          <CardContent class="space-y-2">
+            <div class="space-y-1">
+              <Label for="name">Name</Label>
+              <Input id="name" value="Pedro Duarte" />
+            </div>
+            <div class="space-y-1">
+              <Label for="username">Username</Label>
+              <Input id="username" value="@peduarte" />
+            </div>
+          </CardContent>
+          <CardFooter>
+            <Button>Save changes</Button>
+          </CardFooter>
+        </Card>
+      </TabsContent>
+      <TabsContent value="password">
+        <Card>
+          <CardHeader>
+            <CardTitle>Password</CardTitle>
+            <CardDescription>Change your password here.</CardDescription>
+          </CardHeader>
+          <CardContent class="space-y-2">
+            <div class="space-y-1">
+              <Label for="current">Current password</Label>
+              <Input id="current" type="password" />
+            </div>
+            <div class="space-y-1">
+              <Label for="new">New password</Label>
+              <Input id="new" type="password" />
+            </div>
+          </CardContent>
+          <CardFooter>
+            <Button>Save password</Button>
+          </CardFooter>
+        </Card>
+      </TabsContent>
+      <TabsContent value="settings">
+        <Card>
+          <CardHeader>
+            <CardTitle>Settings</CardTitle>
+            <CardDescription>Manage your application settings.</CardDescription>
+          </CardHeader>
+          <CardContent class="space-y-2">
+            <div class="flex items-center space-x-2">
+              <Switch id="notifications" />
+              <Label for="notifications">Enable notifications</Label>
+            </div>
+            <div class="flex items-center space-x-2">
+              <Switch id="newsletter" />
+              <Label for="newsletter">Subscribe to newsletter</Label>
+            </div>
+          </CardContent>
+          <CardFooter>
+            <Button>Save settings</Button>
+          </CardFooter>
+        </Card>
+      </TabsContent>
+    </Tabs>
+  </section>
+</div>

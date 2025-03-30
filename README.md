@@ -1,12 +1,28 @@
-this is an app currently under development generated using the vscode extension augment.
-So far it displays html content generated from grok. Some logic is there to get the wiktionary entry
-associated to a russian word but something is missing.
-
 # Grok Parse
 
 A web application that helps users understand Russian text by making words interactive and providing instant translations and definitions.
 
-## Features
+
+## In transitional state
+
+this is an app currently under development generated with thr help of the vscode extension augment. It augments russian text with its traduction generated with
+grok. When clicking on a russian word, the corresponding wiktionary page is
+displayed. The wikitonary pages are cached in a db.
+Eventually : 
+  * spaced repetition learning will be possible
+  * to do so a better UI will be developped
+  * more text beside the 1978 Solzhenitsyn address will be supported.
+
+
+Currently the db should be filled in advance with the following command:
+
+```bash
+  pnpm run process-content
+```
+So far it displays html content generated from grok. Some logic is there to get the wiktionary entry
+associated to a russian wor.
+
+## Features as per augment :)
 
 - Processes HTML content containing Russian text
 - Automatically detects and highlights Russian words
