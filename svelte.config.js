@@ -8,7 +8,7 @@ const config = {
     },
     preprocess: vitePreprocess(),
     compilerOptions: {
-        runes: true
+        runes: true,
     }
 };
 

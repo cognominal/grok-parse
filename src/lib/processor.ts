@@ -1,10 +1,14 @@
 import { JSDOM } from 'jsdom';
-import { storeWordData } from './db';
+import { storeWordData, getWordData } from './db';
 
 export async function findRussianWords(text: string): Promise<string[]> {
     const russianPattern = /[а-яёА-ЯЁ]+/g;
     const matches = text.match(russianPattern) || [];
     return matches;
+}
+
+function rmBySel(doc: Document, selector: string): void {
+    doc.querySelectorAll(selector).forEach(el => el.remove());
 }
 
 export async function fetchWiktionaryContent(word: string): Promise<string | null> {
@@ -18,8 +22,9 @@ export async function fetchWiktionaryContent(word: string): Promise<string | nul
         const dom = new JSDOM(html);
         const doc = dom.window.document;
 
-        // Remove all edit section elements
-        doc.querySelectorAll('.mw-editsection').forEach(el => el.remove());
+        // Remove all edit section elements and SVGs
+        rmBySel(doc, '.mw-editsection');
+        rmBySel(doc, 'svg');
 
         const russianSection = doc.querySelector("#Russian");
         if (!russianSection) return null;
@@ -54,11 +59,11 @@ export async function processContent(html: string, fetchDefinitions: boolean = f
             const text = node.textContent || '';
             const russianPattern = /[а-яёА-ЯЁ]+/g;
             let match;
-            
+
             while ((match = russianPattern.exec(text)) !== null) {
                 const word = match[0].toLowerCase();
                 uniqueWords.add(word);
-                
+
                 // Store the index for this occurrence
                 if (!wordIndices.has(word)) {
                     wordIndices.set(word, []);
@@ -83,7 +88,7 @@ export async function processContent(html: string, fetchDefinitions: boolean = f
 
                     const wrapper = doc.createElement('span');
                     wrapper.className = 'russian-word';
-                    wrapper.setAttribute('data-word', word.toLowerCase());
+                    wrapper.setAttribute('data-word', word);
                     wrapper.textContent = word;
                     fragment.appendChild(wrapper);
 
@@ -110,14 +115,40 @@ export async function processContent(html: string, fetchDefinitions: boolean = f
         // Store all found words in the database with their Wiktionary content
         for (const word of uniqueWords) {
             const indices = wordIndices.get(word) || [];
-            const wiktionaryContent = await fetchWiktionaryContent(word);
-            await storeWordData(word, indices, wiktionaryContent);
-            
-            // Optional: Add some logging to track progress
-            console.log(`Processed word: ${word}`);
-            
-            // Add a small delay to avoid overwhelming the Wiktionary API
-            await delay(1000);
+
+            // Check if the word already exists in the database
+            // Add special logging for the problematic word
+            if (word === 'сегодняшней') {
+                console.log(`Found the problematic word: '${word}'`);
+                console.log(`Word type: ${typeof word}`);
+                console.log(`Word length: ${word.length}`);
+                console.log(`Word character codes: ${Array.from(word).map(c => c.charCodeAt(0))}`);
+            }
+
+            const existingWordData = getWordData(word);
+
+            if (existingWordData && existingWordData.wiktionary) {
+                // Word already exists with Wiktionary content, just update indices if needed
+                console.log(`Word '${word}' already in database, skipping fetch.`);
+
+                // Update indices if they've changed
+                if (JSON.stringify(existingWordData.indices) !== JSON.stringify(indices)) {
+                    storeWordData(word, indices, existingWordData.wiktionary);
+                    console.log(`Updated indices for word '${word}'.`);
+                }
+            } else {
+                // Word doesn't exist or has no Wiktionary content, fetch it
+                console.log(`Fetching definition for word '${word}'...`);
+                const wiktionaryContent = await fetchWiktionaryContent(word);
+                storeWordData(word, indices, wiktionaryContent);
+
+                // Optional: Add some logging to track progress
+                console.log(`Processed word: ${word}`);
+
+                // Add a small delay to avoid overwhelming the Wiktionary API
+                // Only delay for words that needed to be fetched
+                await delay(1000);
+            }
         }
     }
 

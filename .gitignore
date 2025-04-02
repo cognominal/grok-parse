@@ -1,13 +1,17 @@
 node_modules
 words.db
+words.db-shm
+words.db-wal
 
 # Output
 .output
 .vercel
 .netlify
 .wrangler
-/.svelte-kit
+/.svelte-kit/generated
+/.svelte-kit/types
 /build
+processed.html
 
 # OS
 .DS_Store

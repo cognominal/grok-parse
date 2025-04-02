@@ -1,133 +1,105 @@
 <script lang="ts">
-  import TabedPane from "$lib/TabedPane.svelte";
-  import type { PageData } from "./$types";
+	/* @tailwind */
+	import { SplitPane } from "@rich_harris/svelte-split-pane";
 
-  // let { data } = { data: PageData } = $props();
-  let { data } = $props();
+	// let { data } = { data: PageData } = $props();
+	let { data } = $props();
 
-  let selectedWord: string | null = $state(null);
-  let wordDefinition: string | null = $state(null);
+	let selectedWord: string | null = $state(null);
+	let wordDefinition: string | null = $state(null);
 
-  async function showDefinition(word: string) {
-    selectedWord = word;
-    const form = new FormData();
-    form.append("word", word);
+	async function showDefinition(word: string) {
+		selectedWord = word;
+		const form = new FormData();
+		form.append("word", word);
 
-    try {
-      const response = await fetch("?/getDefinition", {
-        method: "POST",
-        body: form,
-      });
-      const result = await response.json();
-      // The server returns { definition: string }, not { data: { definition: string } }
-      wordDefinition = result.data;
-      wordDefinition = wordDefinition!.replace(/\\u003C/g, "<");
-      wordDefinition = wordDefinition!.replace(/\\n/g, "");
+		try {
+			const response = await fetch("?/getDefinition", {
+				method: "POST",
+				body: form
+			});
+			const result = await response.json();
+			// The server returns { definition: string }
+			wordDefinition = result.data;
+			// console.log(result);
 
-      console.log(wordDefinition);
-    } catch (error) {
-      console.error("Error fetching definition:", error);
-      wordDefinition = "Error loading definition";
-    }
-  }
+			if (wordDefinition) {
+				wordDefinition = wordDefinition.replace(/\\u003C/g, "<");
+				wordDefinition = wordDefinition.replace(/\\n/g, "");
+			} else {
+				wordDefinition = "Definition not found";
+			}
 
-  function closeDefinition() {
-    selectedWord = null;
-    wordDefinition = null;
-  }
+			console.log(wordDefinition);
+		} catch (error) {
+			console.error("Error fetching definition:", error);
+			wordDefinition = "Error loading definition";
+		}
+	}
 
-  function handleClick(event: MouseEvent) {
-    const target = event.target as HTMLElement;
-    if (target.classList.contains("russian-word")) {
-      const word = target.getAttribute("data-word");
-      if (word) {
-        showDefinition(word);
-      }
-    }
-  }
+	function handleClick(event: MouseEvent | KeyboardEvent) {
+		const target = event.target as HTMLElement;
+		if (target.classList.contains("russian-word")) {
+			const word = target.getAttribute("data-word");
+			if (word) {
+				showDefinition(word);
+			}
+		}
+	}
 </script>
 
-<main>
-  {#if data?.processedHtml}
-    <button onclick={handleClick}>
-      {@html data.processedHtml}
-    </button>
-  {/if}
+<main class="w-full h-screen mx-auto p-5 flex flex-col">
+	<SplitPane
+		type="vertical"
+		id="main-split"
+		min="200px"
+		max="-200px"
+		pos="50%"
+		--color="#e5e7eb"
+		--thickness="4px"
+	>
+		<section slot="a" class="overflow-y-auto bg-white p-4 h-full">
+			{#if data?.processedHtml}
+				<div
+					class="w-full"
+					onclick={handleClick}
+					onkeydown={(e) => e.key === "Enter" && handleClick(e)}
+					role="textbox"
+					tabindex="0"
+					aria-label="Russian text with clickable words"
+				>
+					{@html data.processedHtml}
+				</div>
+			{/if}
+		</section>
 
-  {#if selectedWord && wordDefinition}
-    <button
-      aria-label="Close"
-      class="definition-popup-overlay"
-      onclick={closeDefinition}
-    ></button>
-    <div class="definition-popup">
-      <h3>Definition for "{selectedWord}"</h3>
-      <div class="definition-content">
-        {@html wordDefinition}
-      </div>
-      <button class="close-button" onclick={closeDefinition}>Close</button>
-    </div>
-  {/if}
-  <!-- <TabedPane /> -->
+		<section slot="b" class="overflow-y-auto bg-white p-4 h-full">
+			{#if selectedWord && wordDefinition}
+				<div class="bg-white p-5 rounded-lg shadow-lg overflow-y-auto">
+					<h3>Definition for "{selectedWord}"</h3>
+					<div class="my-4">
+						{@html wordDefinition}
+					</div>
+				</div>
+			{:else}
+				<div class="bg-white p-5 rounded-lg shadow-lg overflow-y-auto">
+					<h3>Select a word to see its definition</h3>
+				</div>
+			{/if}
+		</section>
+	</SplitPane>
 </main>
 
 <style>
-  main {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+	:global(.russian-word) {
+		cursor: pointer;
+		border-bottom: 1px dashed #9ca3af;
+		display: inline-block;
+		padding-left: 0.125rem;
+		padding-right: 0.125rem;
+	}
 
-  :global(.russian-word) {
-    cursor: pointer;
-    border-bottom: 1px dashed #999;
-    display: inline-block;
-    padding: 0 2px;
-  }
-
-  :global(.russian-word:hover) {
-    background-color: #f0f0f0;
-  }
-
-  .definition-popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 80%;
-    max-height: 80vh;
-    overflow-y: auto;
-    z-index: 1000;
-  }
-
-  .definition-popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-  }
-
-  .definition-content {
-    margin: 15px 0;
-  }
-
-  .close-button {
-    background: #f0f0f0;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  .close-button:hover {
-    background: #e0e0e0;
-  }
+	:global(.russian-word:hover) {
+		background-color: #f3f4f6;
+	}
 </style>
