@@ -58,35 +58,39 @@
 		--color="#e5e7eb"
 		--thickness="4px"
 	>
-		<section slot="a" class="overflow-y-auto bg-white p-4 h-full">
-			{#if data?.processedHtml}
-				<div
-					class="w-full"
-					onclick={handleClick}
-					onkeydown={(e) => e.key === "Enter" && handleClick(e)}
-					role="textbox"
-					tabindex="0"
-					aria-label="Russian text with clickable words"
-				>
-					{@html data.processedHtml}
-				</div>
-			{/if}
-		</section>
-
-		<section slot="b" class="overflow-y-auto bg-white p-4 h-full">
-			{#if selectedWord && wordDefinition}
-				<div class="bg-white p-5 rounded-lg shadow-lg overflow-y-auto">
-					<h3>Definition for "{selectedWord}"</h3>
-					<div class="my-4">
-						{@html wordDefinition}
+		{#snippet a()}
+			<section class="overflow-y-auto bg-white p-4 h-full">
+				{#if data?.processedHtml}
+					<div
+						class="w-full"
+						onclick={handleClick}
+						onkeydown={(e) => e.key === "Enter" && handleClick(e)}
+						role="textbox"
+						tabindex="0"
+						aria-label="Russian text with clickable words"
+					>
+						{@html data.processedHtml}
 					</div>
-				</div>
-			{:else}
-				<div class="bg-white p-5 rounded-lg shadow-lg overflow-y-auto">
-					<h3>Select a word to see its definition</h3>
-				</div>
-			{/if}
-		</section>
+				{/if}
+			</section>
+		{/snippet}
+
+		{#snippet b()}
+			<section class="overflow-y-auto bg-white p-4 h-full">
+				{#if selectedWord && wordDefinition}
+					<div class="bg-white p-5 rounded-lg shadow-lg overflow-y-auto">
+						<h3>Definition for "{selectedWord}"</h3>
+						<div class="my-4">
+							{@html wordDefinition}
+						</div>
+					</div>
+				{:else}
+					<div class="bg-white p-5 rounded-lg shadow-lg overflow-y-auto">
+						<h3>Select a word to see its definition</h3>
+					</div>
+				{/if}
+			</section>
+		{/snippet}
 	</SplitPane>
 </main>
 
